@@ -31,8 +31,8 @@ def show(request,pk):
             post.save()
             return render(request, 'blog/detail.html',
                           {'date': date,
-                          'post': post
-                          'form':form,
+                          'post': post,
+                          'form': form,
                           'comments':comments
                           })
     else:
