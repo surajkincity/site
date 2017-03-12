@@ -7,7 +7,7 @@
 
   <h2>Comments</h2>
   <form method="POST" class="post-form" id="form">{% csrf_token %}
-
+<input id="id_blog" maxlength="5000" name="blog" type="text" value="{{post.title}}">
       {{ form.as_p }}
 
       <button type="submit"  class="save btn btn-default">Post</button>
@@ -15,7 +15,7 @@
 <div>
   {%for x in comments%}
 
-<p>  {{x.comment}}</p>
+<p> {{x.blog}} :{{x.comment}}</p>
 
   {%endfor%}
 </div>
