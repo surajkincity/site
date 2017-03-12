@@ -7,6 +7,10 @@ class blog(models.Model):
     title = models.CharField(max_length=5000)
     body = models.TextField()
     date = models.DateField(default = datetime.datetime.now())
+    def slug(self):
+        slugit= self.title.replace(' ', '-')
+        return slugit
+
 
 
 
