@@ -3,3 +3,13 @@
 {{post.date}}
 <a href="{% url 'blog:edit' pk=post.pk %}">Edit</a>
 <p>{{post.body}}</p>
+
+<div>
+  <h2>Comments</h2>
+  <form method="POST" class="post-form" id="form">{% csrf_token %}
+
+      {{ form.as_p }}
+
+      <button type="submit"  class="save btn btn-default">Post</button>
+  </form>
+</div>
