@@ -59,7 +59,7 @@ def edit(request, pk):
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
-            return redirect( 'https://www.spotable.in/blog', {
+            return redirect( 'https://www.spotable.in/blog', 
             {'date': date,
             'blogs':blogs,
             'form' : form
