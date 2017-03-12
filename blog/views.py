@@ -13,11 +13,21 @@ from .forms import blogform,comentform
 def blogindex(request):
     blogs = blog.objects.all()
     date = datetime.datetime.now().date()
-    return render(request, 'blog/index.html',
+    return render(request, 'blog/detail.html',
                   {'date': date,
                   'blogs':blogs
 
+
                   })
+
+def show(request,pk):
+    post = get_object_or_404(blog, pk=pk)
+    date = datetime.datetime.now().date()
+    return render(request, 'blog/detail.html',
+                  {'date': date,
+                  'post': post
+                  })
+
 
 def new(request):
     date = datetime.datetime.now().date()
@@ -38,3 +48,22 @@ def new(request):
                       'blogs':blogs,
                       'form' : form
                       })
+
+
+def edit(request, pk):
+    date = datetime.datetime.now().date()
+    blogs = blog.objects.all()
+    post = get_object_or_404(logs, pk=pk)
+    if request.method == "POST":
+        form = blogform(request.POST, instance=post)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.save()
+            return redirect( 'https://www.spotable.in/blog', {
+            {'date': date,
+            'blogs':blogs,
+            'form' : form
+            })
+    else:
+        form = blogform()
+    return render(request, 'edit.html', {'form': form})
