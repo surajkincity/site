@@ -12,4 +12,10 @@
 
       <button type="submit"  class="save btn btn-default">Post</button>
   </form>
+
+  {%for x in comments%}
+  {%if x.blog == post.title %}
+<p>  {{x}}</p>
+  {%endif%}
+  {%endfor%}
 </div>
