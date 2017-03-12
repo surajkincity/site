@@ -29,12 +29,11 @@ def show(request,pk):
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
-            return render(request, 'blog/detail.html',
-                          {'date': date,
-                          'post': post,
-                          'form': form,
-                          'comments':comments
-                          })
+            return redirect( 'https://www.spotable.in/blog/',
+            {'date': date,
+            'blogs':blogs,
+            'form' : form
+            })
     else:
         form = comentform()
         return render(request, 'blog/detail.html',
