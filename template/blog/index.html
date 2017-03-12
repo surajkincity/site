@@ -6,6 +6,6 @@
 {{x.date}}
 <br>
 <!--  <a href="{% url 'blog:edit' pk=x.pk %}">Edit</a>-->
-<a href="{% url 'blog:show' pk=x.title %}">show</a>
+<a href="{% url 'blog:show' title=x.title %}">show</a>
 <p>{{x.body}}</p>
 {%endfor%}
