@@ -8,8 +8,8 @@ from blog.models import blog,comment
 
 
 urlpatterns = patterns(
-    url(r'^$', home , name='index'),
-    url(r'^sitemap.xml/', sitemap , name='sitemap'),
+
+    url(r'^sitemap.xml/', sitemap , name='index'),
     url(r'^googlefa975541a78f7cc0.html/', google , name='google'),
     url(r'^about-team-spotable/', about , name='about'),
     url(r'^contact-spotable/', contact , name='contact'),
