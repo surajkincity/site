@@ -33,9 +33,11 @@ def show(request,pk):
                           'post': post
                           })
     else:
+        form = comentform()
         return render(request, 'blog/detail.html',
                       {'date': date,
-                      'post': post
+                      'post': post,
+                      'form': form
                       })
 
 
