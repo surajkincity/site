@@ -72,11 +72,7 @@ def edit(request, pk):
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
-            return redirect( 'https://www.spotable.in/blog',
-            {'date': date,
-            'blogs':blogs,
-            'form' : form
-            })
+            return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
     else:
         form = blogform()
     return render(request, 'blog/edit.html', {'form': form})
