@@ -11,6 +11,6 @@ class blog(models.Model):
 
 
 class comment(models.Model):
-    blog = models.CharField(max_length=5000)
+    blog = models.CharField(max_length=5000,null=True,blank=True)
     comment = models.TextField()
     date = models.DateField(default = datetime.datetime.now())
