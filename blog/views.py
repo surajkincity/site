@@ -66,4 +66,4 @@ def edit(request, pk):
             })
     else:
         form = blogform()
-    return render(request, 'edit.html', {'form': form})
+    return render(request, 'blog/edit.html', {'form': form})

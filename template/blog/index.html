@@ -3,5 +3,8 @@
 {% for x in blogs %}
 <h1>{{x.title}}</h1>
 {{x.date}}
+<br>
+<a href="{% url 'blog:edit' pk=post.pk %}">Edit</a>
+<a href="{% url 'blog:show' pk=post.pk %}">show</a>
 <p>{{x.body}}</p>
 {%endfor%}
