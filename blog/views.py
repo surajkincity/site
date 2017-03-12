@@ -23,6 +23,7 @@ def blogindex(request):
 def show(request,pk):
     post = get_object_or_404(blog, pk=pk)
     date = datetime.datetime.now().date()
+    commnts = comment.objects.all()
     if request.method == "POST":
         form = comentform(request.POST)
         if form.is_valid():
@@ -31,13 +32,16 @@ def show(request,pk):
             return render(request, 'blog/detail.html',
                           {'date': date,
                           'post': post
+                          'form':form,
+                          'comments':comments
                           })
     else:
         form = comentform()
         return render(request, 'blog/detail.html',
                       {'date': date,
                       'post': post,
-                      'form': form
+                      'form': form,
+                      'comments':comments
                       })
 
 
