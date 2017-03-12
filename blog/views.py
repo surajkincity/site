@@ -67,8 +67,9 @@ def edit(request, pk):
     date = datetime.datetime.now().date()
     blogs = blog.objects.all()
     post = get_object_or_404(blog, pk=pk)
+    instance = blog.objects.get(pk)
     if request.method == "POST":
-        form = blogform(request.POST, instance=post)
+        form = blogform(request.POST, instance=instance)
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
