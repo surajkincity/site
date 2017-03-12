@@ -8,7 +8,7 @@ class blog(models.Model):
     body = models.TextField()
     date = models.DateField(default = datetime.datetime.now())
     def slug(self):
-        slugit= self.title.replace(' ', '-').replace('?', '')
+        slugit= self.title.replace(' ', '-').replace('?', '').replace('@','')
         return slugit
 
 
