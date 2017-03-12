@@ -1,0 +1,11 @@
+<h1>Answers</h1>
+<h3>Home page</h3>
+<!-- <a href="{% url 'answers:new'%}">New</a>  -->
+{% for x in blogs %}
+<h1>{{x.title}}</h1>
+{{x.date}}
+<br>
+<!--  <a href="{% url 'answers:edit' pk=x.pk %}">Edit</a>-->
+<a href="{% url 'answers:show' slug=x.slug %}">show</a>
+<p>{{x.body}}</p>
+{%endfor%}
