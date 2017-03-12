@@ -16,8 +16,8 @@
   </form>
 <div>
   {%for x in comments%}
-{%if x.blog == post.title %}
+{% if x.blog == post.title %}
 <p> {{x.blog}} :{{x.comment}}</p>
-{%end if%}
+{% endif%}
   {%endfor%}
 </div>
