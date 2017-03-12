@@ -24,6 +24,7 @@ def show(request,pk):
     post = get_object_or_404(blog, pk=pk)
     date = datetime.datetime.now().date()
     comments = comment.objects.all()
+    blogs = blog.objects.all()
     if request.method == "POST":
         form = comentform(request.POST)
         if form.is_valid():
