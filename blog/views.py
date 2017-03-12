@@ -50,10 +50,7 @@ def new(request):
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
-            return render(request, 'blog/index.html',
-                          {'date': date,
-                          'blogs':blogs
-                          })
+            return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
     else:
         form = blogform()
         return render(request, 'blog/new.html',
