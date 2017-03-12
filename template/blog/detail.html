@@ -1,4 +1,6 @@
-
+<style>
+#id_blog, #id_date{display: none;}
+</style>
 <h1>{{post.title}}</h1>
 {{post.date}}
 <a href="{% url 'blog:edit' pk=post.pk %}">Edit</a>
@@ -7,9 +9,9 @@
 
   <h2>Comments</h2>
   <form method="POST" class="post-form" id="form">{% csrf_token %}
-<input id="id_blog" maxlength="5000" name="blog" type="text" value="{{post.title}}">
-      {{ form.as_p }}
 
+      {{ form.as_p }}
+<input id="id_blog" maxlength="5000" name="blog" type="text" value="{{post.title}}">
       <button type="submit"  class="save btn btn-default">Post</button>
   </form>
 <div>
