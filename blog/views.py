@@ -10,7 +10,7 @@ from django.utils import timezone
 from .forms import blogform,comentform
 
 
-def index(request):
+def blogindex(request):
     blogs = blog.objects.all()
     date = datetime.datetime.now().date()
     return render(request, 'blog/index.html',
