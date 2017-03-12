@@ -16,8 +16,6 @@ def blogindex(request):
     return render(request, 'blog/index.html',
                   {'date': date,
                   'blogs':blogs
-
-
                   })
 
 def show(request,slug):
