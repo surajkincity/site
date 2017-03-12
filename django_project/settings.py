@@ -16,16 +16,17 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-# Quick-start development settings - unsuitable for production
+
+# Quick-scdtart development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'w4@c*qfcxn)47esq@9%(8%d(t_w$moquhv8ebkw0mj5#m*hbr&'
+SECRET_KEY = 'de51#5oc^+-_+wht@rjeb+g539o%!)xkg0os!%c32ass3q7_9+'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# SECURITY WARNIcNG: don't run with debug turned on in production!
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,7 +38,11 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog',
 )
+
+
+
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -55,7 +60,7 @@ ROOT_URLCONF = 'django_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR + '/template/',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -98,8 +103,20 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
+PROJECT_DIR  = os.path.dirname(__file__)
 
+MEDIA_ROOT = os.path.join(PROJECT_DIR,'media')
+MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(PROJECT_DIR,'static')
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    # Put strings here, like "/home/html/static" or "C:/www/django/static".
+    # Always use forward slashes, even on Windows.
+    # Don't forget to use absolute paths, not relative paths.
+    os.path.join(PROJECT_DIR, 'staticfiles'),
+)
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 # Allow Django from all hosts. This snippet is installed from
 # /var/lib/digitalocean/allow_hosts.py
@@ -119,5 +136,4 @@ def ip_addresses():
     return ip_list
 
 # Discover our IP address
-ALLOWED_HOSTS = ip_addresses()
-
+#ALLOWED_HOSTS = ip_addresses()

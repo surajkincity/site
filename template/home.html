@@ -1,0 +1,304 @@
+  {% load staticfiles %}
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>SEO company in Pune | Spotable</title>
+      <meta name="description" content="We have an experienced team which includes SEO specialists, full stack developers and even Google’s Ex-Employees.">
+      <style type="text/css">
+
+
+
+      </style>
+      <meta name="google-site-verification" content="L1fLUIYzXPE9F327Jjom-0ElZYgxFBdGfeMBSmyXXyo" />
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="{% static "img/shield.png" %}">
+      <link rel="stylesheet" type="text/css" href="{% static "style.css" %}" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700,400,300' rel='stylesheet' type='text/css'>
+      <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    </head>
+
+    <body>
+
+    <div class="navbar navbar-default " id='mainmenu' style="background-color:#00b0ff;background-image:none !important;box-shadow:none!important;">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{% url 'index' %}" style='font-size: 28px;padding-top: 10px;'>
+
+            <img src="{% static "img/shield.png" %}"  style="height:30px !important;padding-right:5px !important;display:inline-block;"><b>Spotable</b></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div id="headerwrap" >
+      <div class="container">
+        <div class="row">
+          <br><br>
+
+
+
+
+          <!-- /col-lg-6 -->
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5">
+            <img class="img-responsive desktop" src="{% static "img/laptop.png" %}" alt="laptop image" style='height:320px!important;'>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class='col-lg-5'>
+  <br>
+            <h2 style="font-weight: 400 !important;color:white !important;font-size:42px!important;">
+              Get in touch with<br/>
+              an <b>SEO</b> expert
+            </h2>
+
+      <form  class="form-inline" action="" method="POST" enctype="multipart/form-data" >
+
+  <input type="hidden" name="action" value="Send">
+
+  <input type="text" class="form-control" id="exampleInputEmail1" name='website' placeholder="Website" style="    display: inline;margin-bottom: 10px;margin-top: 15px;"><br>
+  <input type="text" class="form-control" id="exampleInputEmail1" name='email' placeholder="Your Email" style="    display: inline;width:199px !important;margin-right: 5px;">
+
+              <button type="submit" class="btn btn-default btn-lg" style="background-image:none !important;background-color:#15c675 !important;color:white !important;border:0px solid white !important;"> Send </button>
+
+
+
+  </form>
+
+
+
+
+  </div><!-- /col-lg-6 -->
+          <br>
+
+          <br><br>
+        </div><!-- /row -->
+
+      </div><!-- /container -->
+    </div><!-- /headerwrap -->
+
+
+
+    <div class='col-md-12' id='about' style="background-color:white;">
+      <div class="container usp"  style="text-align:center;padding-bottom:5%;">
+
+  <div class='row mt centered'><br>
+  <h1 style="text-align:center;font-weight: 400 !important;"><span style='color: #00d674;font-weight:600 !important;'>Spotable</span> is an SEO company located in Pune</h1>
+
+  <div class="col-md-12">
+    <div class="col-md-8 col-md-offset-1">
+
+  <p  class="aboutustext" style="">Spotable is a digital marketing company specializing in SEO.  From small startups to establish companies, We are helping everyone to make the most out of their digital marketing campaigns. Our team includes some SEO specialists, full stack developers and even Google’s Ex-Employees. We want to provide quality SEO services at affordable prices to new budding startups. </p>
+  </div>
+  <div class="col-md-2" >
+    <img src="{% static 'img/shield.png' %}"  style="height: 230px !important;float:left!important;
+      padding: 30px !important;padding-top:40px !important;">
+
+
+  </div>
+
+  </div>
+  </div>
+  <button class="btn btn-success btn-lg aboutbutton" style="">About us</button>
+
+      </div>
+    </div>
+
+    <div class="pricing col-md-12">
+      <div class='container'>
+        <div class='row'>
+          <div class="col-md-12">
+
+        </div>
+
+         </div>
+       </div>
+     </div>
+
+
+  <div class='col-md-12' id='howwework' style="padding: 5%;
+      background-color: white;">
+      <div class="container" >
+
+  <h2 style="text-align: center !important;font-size: 48px !important;font-weight: 400!important; "> How we <b>work</b> </h2>
+  <p style="text-align:center !important;">
+    Our SEO services can be summarized into these 6 core steps
+
+  </p>
+
+
+
+        <div class='row mt centered'>
+          <div class='col-md-4 step'><br><br>
+          <h4>Step 1</h4>
+
+          </div>
+          <div class='col-md-8 ' >
+          <h3>Keyword research</h3>
+          <p>It all starts with a keyword research, We analyse your website, competitors and google search data to finalize on the keyword which are most appropriate to target.</p>
+         </div>
+        </div>
+
+         <div class='row mt centered'>
+          <div class='col-md-4 ' ><br><br>
+          <h4>Step 2</h4>
+
+         </div>
+          <div class='col-md-8 step'>
+          <h3>Site Structure</h3>
+          <p>Next we identify and assign the web pages which will be used to target these keywords. And construct a site  structure for your website.</p>
+          </div>
+
+        </div>
+
+        <div class='row mt centered'>
+          <div class='col-md-4 step'><br><br>
+          <h4>Step 3</h4>
+
+          </div>
+          <div class='col-md-8 ' >
+          <h3>On-Page</h3>
+          <p>With the help of some of our internally developed AI softwares we make sure that all your pages are optimised as per Google’s latest algorithms. </p>
+         </div>
+        </div>
+
+         <div class='row mt centered'>
+          <div class='col-md-4 step'><br><br>
+            <h4>Step 4</h4>
+          </div>
+          <div class='col-md-8 ' >
+          <h3>Off-Page</h3>
+          <p>With the help of our network we continuously develop good links and Ensure that you have the most relevant, high authority backlink profile from your relevant niche. </p>
+          </div>
+        </div>
+
+        <div class='row mt centered'>
+          <div class='col-md-4 step'><br><br>
+          <h4>Step 5</h4>
+
+          </div>
+          <div class='col-md-8 ' >
+          <h3>Site-Wide issues</h3>
+          <p>We also take care of the proper Indexation and rendering of your desired pages. Optimize Local results and fix any manual or algorithmic penalty imposed by google</p>
+         </div>
+        </div>
+
+          <div class='row mt centered'>
+          <div class='col-md-4 ' ><br><br>
+          <h4>Step 6</h4>
+
+         </div>
+          <div class='col-md-8 step'>
+           <h3>Reporting</h3>
+          <p>At the end of every month, we will send you a report on how your site is performing in terms of ranking in google as well as improvement in  traffic.</p>
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+    <div class="footerlinks col-md-12">
+      <div class='container'>
+        <div class='row'>
+          <div class="col-md-12">
+
+
+            <div class="col-md-3">
+            <p>  <a class='' href="{% url 'index' %}" style='font-weight: 400; '>Home page</a></p>
+            <p>   <a class='' href="{% url 'about' %}" style='font-weight: 400;'>About us</a></p>
+            <p>   <a class='' href="{% url 'contact' %}" style='font-weight: 400;'>Contact us</a></p>
+            </div>
+
+            <div class="col-md-3">
+            <p>   <a class='' href="{% url 'privacy' %}" style='font-weight: 400; '>Privacy policy</a></p>
+            <p>   <a class='' href="{% url 'about' %}" style='font-weight: 400;'>Our Blogs</a></p>
+            <p>   <a class='' href="{% url 'contact' %}" style='font-weight: 400;'>Apply for Job</a></p>
+            </div>
+
+            <div class="col-md-3">
+            <p> Lane 6, Koregaon Park<br> Pune 411001</p>
+            <p> info@spotable.in</p>
+
+            </div>
+
+            <div class="col-md-3">
+              <input class="form-control" style="display:inline-block !important;width:150px !important;"></input>
+              <submit class="btn btn-success" style="padding:10px !important;">Subscribe</submit><br><br>
+              <img src="{% static 'img/cards.png' %}"  style="width: 100%;">
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+         </div>
+       </div>
+     </div>
+
+     <div class="col-lg-12" id='footer 4strip' style='background-color: #353f49!important' >
+    <div class="container desktop" style="padding:10px;    text-align: center;">
+
+                <span style='color:white;font-weight: 400;text-align:center;'>©Spotable 2017</span>
+
+    <div class="container mobile footermobile">
+      <div>
+        <p>
+    info@Spotable.in  &nbsp;&nbsp;&nbsp;  +91 7276-888-089
+    </p>
+      </div>
+
+
+    </div>
+
+
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-85089212-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+    </body>
+    </html>
