@@ -11,6 +11,6 @@ class blog(models.Model):
 
 
 class comment(models.Model):
-    blog = models.ForeignKey(blog, on_delete=models.CASCADE,null=True,blank=True)
+    blog = models.CharField(max_length=5000)
     comment = models.TextField()
     date = models.DateField(default = datetime.datetime.now())

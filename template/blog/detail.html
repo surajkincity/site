@@ -9,12 +9,12 @@
   <form method="POST" class="post-form" id="form">{% csrf_token %}
 
       {{ form.as_p }}
-
+<input id="id_blog"  maxlength="1000" name="blog" type="text" value="{{post.pk}}">
       <button type="submit"  class="save btn btn-default">Post</button>
   </form>
 
   {%for x in comments%}
-  {%if x.blog == post.title %}
+  {%if x.blog == post.pk %}
 <p>  {{x}}</p>
   {%endif%}
   {%endfor%}
