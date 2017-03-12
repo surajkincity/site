@@ -30,12 +30,7 @@ def show(request,pk):
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
-            return redirect( '/',
-            {'date': date,
-            'post': post,
-            'form': form,
-            'comments':comments
-            })
+            return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
     else:
         form = comentform()
         return render(request, 'blog/detail.html',
