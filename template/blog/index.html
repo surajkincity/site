@@ -1,5 +1,6 @@
 <h1>Blog</h1>
 <h3>Home page</h3>
+<a href="{% url 'blog:new'%}">New</a>
 {% for x in blogs %}
 <h1>{{x.title}}</h1>
 {{x.date}}
