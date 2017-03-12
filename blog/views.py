@@ -21,7 +21,8 @@ def blogindex(request):
                   })
 
 def show(request,slug):
-    post = get_object_or_404(blog, blog.slug=slug)
+    slug = slug.replace('-', ' ')
+    post = get_object_or_404(blog, slug=slug)
     date = datetime.datetime.now().date()
     comments = comment.objects.all()
     blogs = blog.objects.all()
