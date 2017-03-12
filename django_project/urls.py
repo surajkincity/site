@@ -7,7 +7,8 @@ from blog import views,urls
 from blog.models import blog,comment
 
 
-urlpatterns = patterns(
+
+urlpatterns = patterns( '',
     url(r'^$', home , name='home'),
     url(r'^sitemap.xml/', sitemap , name='sitemap'),
     url(r'^googlefa975541a78f7cc0.html/', google , name='google'),
