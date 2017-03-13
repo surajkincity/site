@@ -6,11 +6,11 @@ class blogform(forms.ModelForm):
 
     class Meta:
         model = blog
-        fields = ('title','body','date')
+        fields = ('title','body','date','name')
 
 
 class comentform(forms.ModelForm):
 
     class Meta:
         model = comment
-        fields = ('blog','comment', 'date')
+        fields = ('blog','comment', 'date','name')
