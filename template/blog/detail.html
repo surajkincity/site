@@ -13,6 +13,7 @@
 <div class="row">
 <div class="col-md-10 col-md-offset-1" >
 <br>  <h1>{{post.title}}</h1><br>
+<p>By <b> {{post.name}}</b> on <b>{{post.date}}</b><br>
 <div class="postbody">
   {{post.body}}
 
@@ -33,7 +34,7 @@
   <div>
   {%for x in comments%}
   {% if x.blog == post.title %}
-  <p> <b> {{x.name}}</b> on <b>{{x.date}}</b><br>{{x.comment}}</p>
+  <p>By <b> {{x.name}}</b> on <b>{{x.date}}</b><br>{{x.comment}}</p>
   {% endif%}
   {%endfor%}
   </div>
