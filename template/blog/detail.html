@@ -2,32 +2,50 @@
 {% load staticfiles %}
 {% block title %}{{post.title}} | Spotable{% endblock %}
 {% block content %}
+
 <style>
 #id_blog, #id_date{display: none;}
 </style>
 
 
+<div class="container">
+<br>  <h1>{{post.title}}</h1><br>
+<div class="row">
+<div class="col-md-10 col-md-offset-1" >
 
-<h1>{{post.title}}</h1>
-{{post.date}}
-<!-- <a href="{% url 'blog:edit' pk=post.pk %}">Edit</a>  -->
-<p>{{post.body}}</p>
+<div class="postbody">
+  {{post.body}}
 
+</div>
+
+
+
+
+<div class="comments">
 
   <h2>Comments</h2>
   <form method="POST" class="post-form" id="form">{% csrf_token %}
 
       {{ form.as_p }}
-<input id="id_blog" maxlength="5000" name="blog" type="text" value="{{post.title}}">
+  <input id="id_blog" maxlength="5000" name="blog" type="text" value="{{post.title}}">
       <button type="submit"  class="save btn btn-default">Post</button>
   </form>
-<div>
+  <div>
   {%for x in comments%}
-{% if x.blog == post.title %}
-<p> {{x.blog}} :{{x.comment}}</p>
-{% endif%}
+  {% if x.blog == post.title %}
+  <p> {{x.date}} :{{x.comment}}</p>
+  {% endif%}
   {%endfor%}
+  </div>
+
 </div>
+
+
+
+</div>
+</div>
+</div>
+
 
 
 
