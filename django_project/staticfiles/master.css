@@ -133,7 +133,7 @@ li.youtube a span {
         .flagvisibility { float: right;}
 
 
-.navbar a {text-decoration: none;padding: 5px;font-size: 18px;color:#4d4d4d;}
+.navbar a {text-decoration: none;padding: 5px;font-size: 18px;color:#4d4d4d;font-weight: 400;}
 .navbar li {list-style: none;display: inline-block;}
 .col-md-3{  min-width: 220px !important; position: relative;
     min-height: 1px;vertical-align: top;
