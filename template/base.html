@@ -2,142 +2,153 @@
 
 {% load staticfiles %}
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>{% block title %}{% endblock %}</title>
-    <meta name="description" content="We have an experienced team which includes SEO specialists, full stack developers and even Google’s Ex-Employees.">
-    <style type="text/css">
+
+
+    <html >
+       <head>
+
+           <meta charset="utf-8">
+           <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+           <title>{% block title %}{% endblock %}</title>
+
+           <!-- Meta -->
+           <meta name="description" content="Fore is a free, responsive front end template from Papaya, made by Jordan Bowman.">
+           <meta name="viewport" content="width=device-width, initial-scale=1">
+           <meta name="author" content="Jordan Bowman">
+           <meta name="keywords" content="awesome, hott, extremely attractive, sheer brilliance">
+
+
+           <link rel="stylesheet" type="text/css" href="{% static "master.css" %}" />
+
+           <!-- Import web fonts using the link tag instead of CSS @import -->
+           <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+
+           <!-- Icons from http://fontawesome.io/ -->
+           <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
+
+
+       </head>
+
+       <body>
+
+
+   <section style="background-color: #edefee;">
+               <div class="navbar" style="padding:10px;margin:auto;max-width:1100px;">
+                 <a href="{% url 'home' %}"><b style="font-size:26px;">Spotable</b></a>
+                 <span style='float:right;'>
+                   <a href="{% url 'home' %}">Home</a>
+                 <a href="{% url 'about' %}">About</a>
+               <a href="{% url 'contact' %}">Contact</a></span>
 
 
 
-    </style>
-    <meta name="google-site-verification" content="L1fLUIYzXPE9F327Jjom-0ElZYgxFBdGfeMBSmyXXyo" />
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="{% static "img/shield.png" %}">
-    <link rel="stylesheet" type="text/css" href="{% static "style.css" %}" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700,400,300' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-  </head>
-
-  <body>
-
-  <div class="navbar navbar-default " id='mainmenu' style="background-color:#15c675;background-image:none !important;box-shadow:none!important;">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="{% url 'home' %}" style='font-size: 24px;padding-top: 10px;'>
-
-          <img src="{% static "img/shield.png" %}"  style="height:30px !important;padding-right:5px !important;display:inline-block;"><b>Spotable</b></a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="{% url 'home' %}">Home</a></li>
-          <li><a href="{% url 'about' %}">About</a></li>
-          <li><a href="{% url 'contact' %}">Contact</a></li>
-
-
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </div>
-
-
+               </div><!--/.nav-collapse -->
+   </section>
 
   {% block content %}
 
   {% endblock %}
-  <div class="footerlinks col-md-12">
-    <div class='container'>
-      <div class='row'>
-        <div class="col-md-12">
 
 
-          <div class="col-md-3">
-          <p>  <a class='' href="{% url 'home' %}" style='font-weight: 400; '>Home page</a></p>
-          <p>   <a class='' href="{% url 'about' %}" style='font-weight: 400;'>About us</a></p>
-          <p>   <a class='' href="{% url 'contact' %}" style='font-weight: 400;'>Contact us</a></p>
-          <p>   <a class='' href="{% url 'privacy' %}" style='font-weight: 400; '>Privacy policy</a></p>
-          </div>
-
-          <div class="col-md-3">
-
-          <p>   <a class='' href="{% url 'blog:blogindex' %}" style='font-weight: 400;'>Our Blogs</a></p>
-          <p>   <a class='' href="{% url 'answers:blogindex' %}" style='font-weight: 400;'>Question&Answers</a></p>
-          <p>   <a class='' href="{% url 'contact' %}" style='font-weight: 400;'>Apply for Job</a></p>
-          </div>
-
-          <div class="col-md-3">
-          <p> Lane 6, Koregaon Park<br> Pune 411001</p>
-          <p> info@spotable.in</p>
-
-          </div>
-
-          <div class="col-md-3">
-            <input class="form-control" style="display:inline-block !important;width:150px !important;"></input>
-            <submit class="btn btn-success" style="padding:10px !important;">Subscribe</submit><br><br>
-            <img src="{% static 'img/cards.png' %}"  style="width: 100%;">
-          </div>
-
-
-
-
-
-
-
-
-
+  <section class="call-to-action cta-2">
+      <div class="cta-container cf">
+          <p>Want to know how we can help?</p>
+          <a class="btn" href="#">Get in touch →</a>
       </div>
+  </section>
 
-       </div>
-     </div>
-   </div>
+  <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <ul class="footer_box">
+                <h4>Pages</h4>
+                <li><a class='' href="{% url 'home' %}" style='font-weight: 400; '>Home page</a></li>
+                <li><a class='' href="{% url 'about' %}" style='font-weight: 400;'>About us</a></li>
+                <li>  <a class='' href="{% url 'contact' %}" style='font-weight: 400;'>Contact us</a></li>
 
-   <div class="col-lg-12" id='footer 4strip' style='background-color: #353f49!important' >
-  <div class="container desktop" style="padding:10px;    text-align: center;">
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="footer_box">
+                <h4>Legal</h4>
+                <li><a class='' href="{% url 'privacy' %}" style='font-weight: 400; '>Privacy policy</a></li>
+                <li><a class='' href="{% url 'contact' %}" style='font-weight: 400;'>Apply for Job</a></li>
 
-              <span style='color:white;font-weight: 400;text-align:center;'>©Spotable 2017</span>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="footer_box">
+                <h4>Resource</h4>
+                <li><a class='' href="{% url 'blog:blogindex' %}" style='font-weight: 400;'>Our Blogs</a></li>
+                <li><a class='' href="{% url 'answers:blogindex' %}" style='font-weight: 400;'>Question & Answers</a></li>
 
-  <div class="container mobile footermobile">
-    <div>
-      <p>
-  info@Spotable.in  &nbsp;&nbsp;&nbsp;  +91 7276-888-089
-  </p>
-    </div>
+              </ul>
+            </div>
+
+            <div class="col-md-3">
+              <ul class="footer_box">
+                <h4>Newsletter</h4>
+                <div class="footer_search">
+                     <form style="padding-bottom:10px;">
+                    <input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}" style="line-height:1.6 !important;">
+                    <input type="submit" value="Go">
+                  </form><span style="color:white;">© 2017 Spotable</span>
+                    </div>
+                <ul class="social">
+                  <li class="facebook"><a href="#"><span> </span></a></li>
+                  <li class="twitter"><a href="#"><span> </span></a></li>
+                  <li class="instagram"><a href="#"><span> </span></a></li>
+                  <li class="pinterest"><a href="#"><span> </span></a></li>
+                  <li class="youtube"><a href="#"><span> </span></a></li>
+                  </ul>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+  <!-- Footer -->
 
 
-  </div>
 
+  <!-- Reference jQuery -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 
-  </div>
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Reference Javascript, minify for production -->
+  <script type="text/javascript" src="js/jquery.event.move.js"></script>
+  <script type="text/javascript" src="js/jquery.event.swipe.js"></script>
+  <script type="text/javascript" src="js/unslider.js"></script>
+
+  <!-- Unslider script -->
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      $(document).ready(function () {
+          var unslider = $('.slider').unslider();
+          $('.unslider-arrow').click(function(event) {
+              event.preventDefault();
+              if ($(this).hasClass('next')) {
+                  unslider.data('unslider')['next']();
+              } else {
+                  unslider.data('unslider')['prev']();
+              };
+          });
+          var unslider = $('.slider').unslider();
 
-  ga('create', 'UA-85089212-1', 'auto');
-  ga('send', 'pageview');
-
+          unslider.on('movestart', function(e) {
+              if((e.distX > e.distY && e.distX < -e.distY) || (e.distX < e.distY &&   e.distX > -e.distY)) {
+                  e.preventDefault();
+              }
+          });
+  });
   </script>
-  </body>
-  </html>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+
+</body>
+
+</html>
