@@ -1,6 +1,12 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}SEO company in Pune | Spotable{% endblock %}
+{% block content %}
+
 <form method="POST" class="post-form" id="form">{% csrf_token %}
 
     {{ form.as_p }}
 
     <button type="submit"  class="save btn btn-default">Post</button>
 </form>
+{% endblock %}

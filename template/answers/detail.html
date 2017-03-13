@@ -1,6 +1,9 @@
-<head>
-<title>{{post.title}} | Spotable</title>
-</head><style>
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}{{post.title}} | Spotable{% endblock %}
+{% block content %}
+
+<style>
 #id_blog, #id_date{display: none;}
 </style>
 <h1>{{post.title}}</h1>
@@ -23,3 +26,4 @@
 {% endif%}
   {%endfor%}
 </div>
+{% endblock %}

@@ -1,11 +1,13 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block title %}SEO company in Pune | Spotable{% endblock %}
-
 {% block content %}
 <style>
 #id_blog, #id_date{display: none;}
 </style>
+
+
+
 <h1>{{post.title}}</h1>
 {{post.date}}
 <!-- <a href="{% url 'blog:edit' pk=post.pk %}">Edit</a>  -->
@@ -26,5 +28,7 @@
 {% endif%}
   {%endfor%}
 </div>
+
+
 
 {% endblock %}
