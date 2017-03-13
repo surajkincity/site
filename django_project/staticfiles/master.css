@@ -141,4 +141,8 @@ padding: 1%;
   width: 22%;display: inline-block;}
 
   .container,.row {display: block;box-sizing: border-box;}
+
+
+.team {display: inline-block; padding: 1%;width: 17%;text-align: center;}
+
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
