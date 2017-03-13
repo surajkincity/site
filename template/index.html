@@ -1,175 +1,254 @@
-
-{% extends "base.html" %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html > <!--<![endif]-->
 {% load staticfiles %}
-{% block title %}SEO company in Pune | Spotable{% endblock %}
+    <head>
 
-{% block content %}
-<div id="headerwrap"  style="background-color:#15c675;">
-  <div class="container">
-    <div class="row">
-      <br><br>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+        <title>Fore ~ A Responsive Template from Papaya</title>
 
-
-
-      <!-- /col-lg-6 -->
-      <div class="col-lg-1"></div>
-      <div class="col-lg-5">
-        <img class="img-responsive desktop" src="{% static "img/laptop.png" %}" alt="laptop image" style='height:320px!important;'>
-      </div>
-      <div class="col-lg-1"></div>
-      <div class='col-lg-5'>
-<br>
-        <h2 style="font-weight: 400 !important;color:white !important;font-size:42px!important;">
-          Get in touch with<br/>
-          an <b>SEO</b> expert
-        </h2>
-
-  <form  class="form-inline" action="" method="POST" enctype="multipart/form-data" >
-
-<input type="hidden" name="action" value="Send">
-
-<input type="text" class="form-control" id="exampleInputEmail1" name='website' placeholder="Website" style="    display: inline;margin-bottom: 10px;margin-top: 15px;"><br>
-<input type="text" class="form-control" id="exampleInputEmail1" name='email' placeholder="Your Email" style="    display: inline;width:199px !important;margin-right: 5px;">
-
-          <button type="submit" class="btn btn-default btn-lg" style="background-image:none !important;background-color:#15c675 !important;color:white !important;border:0px solid white !important;"> Send </button>
-
-
-
-</form>
+        <!-- Meta -->
+        <meta name="description" content="Fore is a free, responsive front end template from Papaya, made by Jordan Bowman.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Jordan Bowman">
+        <meta name="keywords" content="awesome, hott, extremely attractive, sheer brilliance">
 
 
 
 
-</div><!-- /col-lg-6 -->
-      <br>
-
-      <br><br>
-    </div><!-- /row -->
-
-  </div><!-- /container -->
-</div><!-- /headerwrap -->
+        <!-- Google Author link -->
 
 
-
-<div class='col-md-12' id='about' style="background-color:white;">
-  <div class="container usp"  style="text-align:center;padding-bottom:5%;">
-
-<div class='row mt centered'><br>
-<h1 style="text-align:center;font-weight: 400 !important;"><span style='color: #00d674;font-weight:600 !important;'>Spotable</span> is an SEO company located in Pune</h1>
-
-<div class="col-md-12">
-<div class="col-md-8 col-md-offset-1">
-
-<p  class="aboutustext" style="">Spotable is a digital marketing company specializing in SEO.  From small startups to establish companies, We are helping everyone to make the most out of their digital marketing campaigns. Our team includes some SEO specialists, full stack developers and even Google’s Ex-Employees. We want to provide quality SEO services at affordable prices to new budding startups. </p>
-</div>
-<div class="col-md-2" >
-<img src="{% static 'img/shield.png' %}"  style="height: 230px !important;float:left!important;
-  padding: 30px !important;padding-top:40px !important;">
+        <!-- Favicon.ico and apple-touch-icon.png (according to Apple docs). A good tool is http://iconifier.net/ -->
 
 
-</div>
+        <!-- CSS, Normalize First, minify for production -->
 
-</div>
-</div>
-<button class="btn btn-success btn-lg aboutbutton" style="">About us</button>
+        <link rel="stylesheet" type="text/css" href="{% static "master.css" %}" />
 
-  </div>
-</div>
+        <!-- Import web fonts using the link tag instead of CSS @import -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
 
-<div class="pricing col-md-12">
-  <div class='container'>
-    <div class='row'>
-      <div class="col-md-12">
-
-    </div>
-
-     </div>
-   </div>
- </div>
+        <!-- Icons from http://fontawesome.io/ -->
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
 
 
-<div class='col-md-12' id='howwework' style="padding: 5%;
-  background-color: white;">
-  <div class="container" >
+    </head>
 
-<h2 style="text-align: center !important;font-size: 48px !important;font-weight: 400!important; "> How we <b>work</b> </h2>
-<p style="text-align:center !important;">
-Our SEO services can be summarized into these 6 core steps
+    <body>
 
-</p>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chrome/‎">install Google Chrome</a> to experience this site.</p>
+        <![endif]-->
+<section style="background-color: #edefee;">
+            <div class="navbar" style="padding:10px;margin:auto;max-width:1100px;">
+              <a href="{% url 'home' %}"><b style="font-size:26px;">Spotable</b></a>
+              <span style='float:right;'>
+                <a href="{% url 'home' %}">Home</a>
+              <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'contact' %}">Contact</a></span>
 
 
 
-    <div class='row mt centered'>
-      <div class='col-md-4 step'><br><br>
-      <h4>Step 1</h4>
+            </div><!--/.nav-collapse -->
+</section>
 
-      </div>
-      <div class='col-md-8 ' >
-      <h3>Keyword research</h3>
-      <p>It all starts with a keyword research, We analyse your website, competitors and google search data to finalize on the keyword which are most appropriate to target.</p>
-     </div>
-    </div>
 
-     <div class='row mt centered'>
-      <div class='col-md-4 ' ><br><br>
-      <h4>Step 2</h4>
+        <!-- Header -->
+        <header id="main-header">
+            <div class="container">
+                <h3>Get in touch with an SEO expert</h3>
+                <form>
+                          <input placeholder="Website" style="padding:12px;border-radious:3px;border:0px solid grey;    border-radius: .2em;margin-top:5px!important;">
+                          <input placeholder="Email" style="margin-top:5px!important;padding:12px;border-radious:3px;border:0px solid grey;    border-radius: .2em;">
+                          <button class="btn-success btn" style="margin-top:5px!important;padding:16px;margin-top:-5px !important;line-height:.8 !important;border:0px solid grey;"><b> Send! </b></button>
+                        </form>
 
-     </div>
-      <div class='col-md-8 step'>
-      <h3>Site Structure</h3>
-      <p>Next we identify and assign the web pages which will be used to target these keywords. And construct a site  structure for your website.</p>
-      </div>
+            </div>
+        </header>
 
-    </div>
 
-    <div class='row mt centered'>
-      <div class='col-md-4 step'><br><br>
-      <h4>Step 3</h4>
+        <!-- First call to action -->
 
-      </div>
-      <div class='col-md-8 ' >
-      <h3>On-Page</h3>
-      <p>With the help of some of our internally developed AI softwares we make sure that all your pages are optimised as per Google’s latest algorithms. </p>
-     </div>
-    </div>
 
-     <div class='row mt centered'>
-      <div class='col-md-4 step'><br><br>
-        <h4>Step 4</h4>
-      </div>
-      <div class='col-md-8 ' >
-      <h3>Off-Page</h3>
-      <p>With the help of our network we continuously develop good links and Ensure that you have the most relevant, high authority backlink profile from your relevant niche. </p>
-      </div>
-    </div>
+        <!-- Macbook Section -->
+        <section id="macbook">
+            <div class="container">
+                <h1>Spotable is an SEO company located in Pune</h1>
+                <p>Spotable is a digital marketing company specializing in SEO. From small startups to establish companies, We are helping everyone to make the most out of their digital marketing campaigns. Our team includes some SEO specialists, full stack developers and even Google’s Ex-Employees. We want to provide quality SEO services at affordable prices to new budding startups.</p>
+                <img src="images/macbookpro.png"/>
+            </div>
+        </section>
 
-    <div class='row mt centered'>
-      <div class='col-md-4 step'><br><br>
-      <h4>Step 5</h4>
+        <section class="call-to-action">
+            <div class="cta-container cf">
+                <p>Want to know more about Spotable?</p>
+                <a class="btn" href="#">Read about us →</a>
+            </div>
+        </section>
+        <!-- Summary Section -->
 
-      </div>
-      <div class='col-md-8 ' >
-      <h3>Site-Wide issues</h3>
-      <p>We also take care of the proper homeation and rendering of your desired pages. Optimize Local results and fix any manual or algorithmic penalty imposed by google</p>
-     </div>
-    </div>
 
-      <div class='row mt centered'>
-      <div class='col-md-4 ' ><br><br>
-      <h4>Step 6</h4>
-
-     </div>
-      <div class='col-md-8 step'>
-       <h3>Reporting</h3>
-      <p>At the end of every month, we will send you a report on how your site is performing in terms of ranking in google as well as improvement in  traffic.</p>
-      </div>
-
-    </div>
+        <!-- Three Images Section -->
 
 
 
-  </div>
-</div>
-{% endblock %}
+        <!-- Slider Section -->
+
+
+
+        <!-- List Section -->
+        <section id="list">
+            <div class="container">
+                <header class="body-header">
+                    <h2>How we work</h2>
+                    <p>Our SEO services can be summarized into these 6 core steps</p>
+                </header>
+                <article>
+                    <div class="list-row cf">
+                        <div class="list-item">
+                            <i class="fa fa-bullhorn fa-2x"></i>
+                            <h3>1. Keyword research</h3>
+                            <p>It all starts with a keyword research, We analyse your website, competitors and google search data to finalize on the keyword which are most appropriate to target.</p>
+                        </div>
+                        <div class="list-item">
+                            <i class="fa fa-code-fork fa-2x"></i>
+                            <h3>2. Site Structure</h3>
+                            <p>Next we identify and assign the web pages which will be used to target these keywords. And construct a site structure for your website.</p>
+                        </div>
+                    </div>
+                    <div class="list-row cf">
+                        <div class="list-item">
+                            <i class="fa fa-bolt fa-2x"></i>
+                            <h3>3. On-Page</h3>
+                            <p>With the help of some of our internally developed AI softwares we make sure that all your pages are optimised as per Google’s latest algorithms.</p>
+                        </div>
+                        <div class="list-item">
+                            <i class="fa fa-folder-open fa-2x"></i>
+                            <h3>4. Off-Page</h3>
+                            <p>With the help of our network we continuously develop good links and Ensure that you have the most relevant, high authority backlink profile from your relevant niche..</p>
+                        </div>
+                    </div>
+                    <div class="list-row cf">
+                        <div class="list-item">
+                            <i class="fa fa-users fa-2x"></i>
+                            <h3>5. Site-Wide issues</h3>
+                            <p>We also take care of the proper homeation and rendering of your desired pages. Optimize Local results and fix any manual or algorithmic penalty imposed by google.</p>
+                        </div>
+                        <div class="list-item" id="last-item">
+                            <i class="fa fa-wrench fa-2x"></i>
+                            <h3>6. Reporting</h3>
+                            <p>At the end of every month, we will send you a report on how your site is performing in terms of ranking in google as well as improvement in traffic.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- Second call to action -->
+        <section class="call-to-action cta-2">
+            <div class="cta-container cf">
+                <p>Want to know how we can help?</p>
+                <a class="btn" href="#">Get in touch →</a>
+            </div>
+        </section>
+
+        <div class="footer">
+        			<div class="container">
+        				<div class="row">
+                  <div class="col-md-3">
+        						<ul class="footer_box">
+        							<h4>Pages</h4>
+        							<li><a class='' href="{% url 'home' %}" style='font-weight: 400; '>Home page</a></li>
+        							<li><a class='' href="{% url 'about' %}" style='font-weight: 400;'>About us</a></li>
+        							<li>  <a class='' href="{% url 'contact' %}" style='font-weight: 400;'>Contact us</a></li>
+
+        						</ul>
+        					</div>
+        					<div class="col-md-3">
+        						<ul class="footer_box">
+        							<h4>Legal</h4>
+        							<li><a class='' href="{% url 'privacy' %}" style='font-weight: 400; '>Privacy policy</a></li>
+        							<li><a class='' href="{% url 'contact' %}" style='font-weight: 400;'>Apply for Job</a></li>
+
+        						</ul>
+        					</div>
+        					<div class="col-md-3">
+        						<ul class="footer_box">
+        							<h4>Resource</h4>
+        							<li><a class='' href="{% url 'blog:blogindex' %}" style='font-weight: 400;'>Our Blogs</a></li>
+        							<li><a class='' href="{% url 'answers:blogindex' %}" style='font-weight: 400;'>Question & Answers</a></li>
+
+        						</ul>
+        					</div>
+
+        					<div class="col-md-3">
+        						<ul class="footer_box">
+        							<h4>Newsletter</h4>
+        							<div class="footer_search">
+        				    		   <form style="padding-bottom:10px;">
+        				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}" style="line-height:1.6 !important;">
+        				    			<input type="submit" value="Go">
+                        </form><span style="color:white;">© 2017 Spotable</span>
+        					        </div>
+        							<ul class="social">
+        							  <li class="facebook"><a href="#"><span> </span></a></li>
+        							  <li class="twitter"><a href="#"><span> </span></a></li>
+        							  <li class="instagram"><a href="#"><span> </span></a></li>
+        							  <li class="pinterest"><a href="#"><span> </span></a></li>
+        							  <li class="youtube"><a href="#"><span> </span></a></li>
+        						    </ul>
+
+        						</ul>
+        					</div>
+
+        				</div>
+
+        			</div>
+        		</div>
+        <!-- Footer -->
+
+
+
+        <!-- Reference jQuery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+        <!-- Reference Javascript, minify for production -->
+        <script type="text/javascript" src="js/jquery.event.move.js"></script>
+        <script type="text/javascript" src="js/jquery.event.swipe.js"></script>
+        <script type="text/javascript" src="js/unslider.js"></script>
+
+        <!-- Unslider script -->
+        <script>
+            $(document).ready(function () {
+                var unslider = $('.slider').unslider();
+                $('.unslider-arrow').click(function(event) {
+                    event.preventDefault();
+                    if ($(this).hasClass('next')) {
+                        unslider.data('unslider')['next']();
+                    } else {
+                        unslider.data('unslider')['prev']();
+                    };
+                });
+                var unslider = $('.slider').unslider();
+
+                unslider.on('movestart', function(e) {
+                    if((e.distX > e.distY && e.distX < -e.distY) || (e.distX < e.distY &&   e.distX > -e.distY)) {
+                        e.preventDefault();
+                    }
+                });
+        });
+        </script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+
+    </body>
+
+</html>
