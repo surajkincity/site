@@ -7,6 +7,7 @@ class blog(models.Model):
     title = models.CharField(max_length=5000)
     body = models.TextField()
     date = models.DateField(default = datetime.datetime.now())
+    name = models.CharField(max_length=5000)
     def slug(self):
         slugit= self.title.replace(' ', '-').replace('?', '_').replace('@', '*')
         return slugit
@@ -15,6 +16,7 @@ class blog(models.Model):
 
 
 class comment(models.Model):
+    name = models.CharField(max_length=5000)
     blog = models.CharField(max_length=5000,null=True,blank=True)
     comment = models.TextField()
     date = models.DateField(default = datetime.datetime.now())
