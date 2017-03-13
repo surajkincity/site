@@ -13,13 +13,13 @@
   <h1>{{x.title}}</h1>
   <p>{{x.date}}</p>
   <p><a class="btn btn-primary btn-lg" href="{% url 'answers:show' slug=x.slug %}" role="button">Read Answers</a>
+    <!-- <a href="{% url 'answers:new'%}">New</a>  -->
 
+    <!--  <a href="{% url 'answers:edit' pk=x.pk %}">Edit</a>-->
 </div>
 
 {%endfor%}
-<!-- <a href="{% url 'answers:new'%}">New</a>  -->
 
-<!--  <a href="{% url 'answers:edit' pk=x.pk %}">Edit</a>-->
 
 
 
