@@ -143,6 +143,15 @@ padding: 1%;
   .container,.row {display: block;box-sizing: border-box;}
 
 
-.team {display: inline-block; padding: 1%;width: 17%;text-align: center;}
+	.team{  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) !important;
+	 padding-top: 20px!important;
+	   background-color: white!important;
+	   margin-right: 13px!important;
+	   border-radius: 2px!important;
+	   display: inline-block!important;
+	   width: 190px!important;
+	   margin-bottom: 15px!important;
+		 
+	 }
 
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
