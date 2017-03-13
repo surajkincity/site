@@ -149,9 +149,11 @@ padding: 1%;
 	   margin-right: 13px!important;
 	   border-radius: 2px!important;
 	   display: inline-block!important;
-	   width: 190px!important;
+	   width: 180px!important;
 	   margin-bottom: 15px!important;
-		 
+		 text-align: center;
 	 }
-
+.team h4{font-size: 1em ;   margin:2px;
+    }
+		.team p{margin: 2px;}
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
