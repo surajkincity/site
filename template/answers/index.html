@@ -11,9 +11,10 @@
 {% for x in blogs %}
 <div class='questionsnippet'>
 <h2>{{x.title}}</h2>
+<a class="btn btn-success" style='float:right;color:white !important;' href="{% url 'answers:show' slug=x.slug %}" role="button">Read Answers</a>
  <p> By <b> {{x.name}}</b> on <b>{{x.date}}</b></span>
  </p>
-<a class="btn btn-success" style='color:white !important;' href="{% url 'answers:show' slug=x.slug %}" role="button">Read Answers</a> 
+ 
 
 </div>
 {%endfor%}
