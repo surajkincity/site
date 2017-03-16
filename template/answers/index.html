@@ -8,23 +8,14 @@
 <div class="col-md-10 col-md-offset-1" >
 
 
-
-
-
-
 {% for x in blogs %}
-<div class="question">
-  <h2>{{x.title}}</h2>
-  <p>{{x.date}}</p>
-  <p><a class="btn btn-success" style='color:white !important;' href="{% url 'answers:show' slug=x.slug %}" role="button">Read Answers</a>
-    <!-- <a href="{% url 'answers:new'%}">New</a>  -->
+<div class='questionsnippet'>
+<h2>{{x.title}}</h2>
+  <p><div style="margin-right:10px;background-color: khaki;border-radius: 50%;width: 50px;height: 50px;display: inline-block;color: white;font-size: 30px;text-align: center;">{{x.ic}}</div> <span style='font-size:16px;'>By <b> {{x.name}}</b> <br>on <b>{{x.date}}</b></span></p>
 
-    <!--  <a href="{% url 'answers:edit' pk=x.pk %}">Edit</a>-->
+<a class="btn btn-success" style='color:white !important;' href="{% url 'answers:show' slug=x.slug %}" role="button">Read Answers</a> 
+<span>2 Answers</span>
 </div>
-
 {%endfor%}
 
-</div>
-</div>
-</div>
 {% endblock %}
