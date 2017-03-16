@@ -159,4 +159,6 @@ padding: 1%;
 .team h4{font-size: 1em ;   margin:2px;
     }
 		.team p{margin: 2px;}
+
+	.questionsnippet{padding:1%;background-color: #f0f0f0; border: 1px solid lightgrey;border-radius: 1px;}
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
