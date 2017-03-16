@@ -160,5 +160,6 @@ padding: 1%;
     }
 		.team p{margin: 2px;}
 
-	.questionsnippet{padding:1%;background-color: #f0f0f0; border: 1px solid lightgrey;border-radius: 1px;}
+	.questionsnippet{padding:1%;background-color: #f0f0f0; border: 1px solid lightgrey;border-radius: 1px;margin:1%;}
+	.questionsnippet h2{font-size:28px;}
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
