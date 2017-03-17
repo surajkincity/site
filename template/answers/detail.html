@@ -30,11 +30,11 @@
 
 <div class="comments">
 
-  <h2>Comments</h2>
+  
   <form method="POST" class="post-form" id="form">{% csrf_token %}
 
       {{ form.as_p }}
-  <input id="id_blog" maxlength="5000" name="blog" type="text" value="{{post.title}}">
+  <input id="id_blog" maxlength="5000" name="blog" type="text" value="{{post.id}}">
       <button type="submit"  class="save btn btn-default">Post</button>
   </form>
   <br>
@@ -42,7 +42,7 @@
   <h3 style="text-align: center;">All Answers</h3>
 
     {%for x in comments%}
-  {% if x.blog == post.title %}
+  {% if x.blog == post.id %}
 
   <div class="commentblock">
 <div class="atitle">
