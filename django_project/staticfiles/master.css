@@ -164,4 +164,6 @@ padding: 1%;
 .call-to-action1 .btn {float: none;padding: 10px 15px;margin-top: -4px;border-radius: 3px;}
 	.questionsnippet{padding:2%;background-color: #f0f0f0; border: 1px solid lightgrey;border-radius: 1px;}
 	.questionsnippet h2{font-size:32px;}
+
+.commentblock {border:1px solid lightgrey; padding: 1%;}
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */

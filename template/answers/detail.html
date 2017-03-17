@@ -37,16 +37,16 @@
   <input id="id_blog" maxlength="5000" name="blog" type="text" value="{{post.title}}">
       <button type="submit"  class="save btn btn-default">Post</button>
   </form>
-  <div>
+  <div class="commentblock">
   {%for x in comments%}
   {% if x.blog == post.title %}
 
-<div>
+<div class="atitle">
 <p>
   <div style="margin-right:5px;background-color: khaki;border-radius: 50%;width: 45px;height: 45px;display: inline-block;color: white;font-size: 25px;text-align: center;">{{x.ic}}</div> <span style='font-size:16px;'>By <b> {{x.name}}</b> on <b>{{x.date}}</b></span></p>
 </div>
 
-<div>
+<div class="acomment">
 <p>{{x.comment}}</p>
 </div>
 
