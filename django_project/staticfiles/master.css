@@ -165,6 +165,6 @@ padding: 1%;
 	.questionsnippet{padding:2%;background-color: #f0f0f0; border: 1px solid lightgrey;border-radius: 1px;}
 	.questionsnippet h2{font-size:32px;}
 
-.commentblock {border:1px solid lightgrey; padding: 1%;}
+.commentblock {border:1px solid lightgrey; }
 .atitle {border-bottom: 1px solid lightgrey;}
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
