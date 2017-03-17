@@ -166,6 +166,7 @@ padding: 1%;
 	.questionsnippet h2{font-size:32px;}
 
 .commentblock {border:1px solid lightgrey; }
-.atitle {border-bottom: 1px solid lightgrey; padding-left: 2%;padding-right: 2%;}
+.atitle {height: 45px;
+    margin-top: -8px;border-bottom: 1px solid lightgrey; padding-left: 2%;padding-right: 2%;}
 .comments p{padding-left: 2%;padding-right: 2%;}
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
