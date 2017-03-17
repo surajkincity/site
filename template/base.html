@@ -20,6 +20,8 @@
 
 
            <link rel="stylesheet" type="text/css" href="{% static "master.css" %}" />
+           
+           <script type="text/javascript" src="{% static 'index.js' %}"></script>
 
            <!-- Import web fonts using the link tag instead of CSS @import -->
            <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
@@ -120,31 +122,7 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 
   <!-- Reference Javascript, minify for production -->
-  <script type="text/javascript" src="js/jquery.event.move.js"></script>
-  <script type="text/javascript" src="js/jquery.event.swipe.js"></script>
-  <script type="text/javascript" src="js/unslider.js"></script>
 
-  <!-- Unslider script -->
-  <script>
-      $(document).ready(function () {
-          var unslider = $('.slider').unslider();
-          $('.unslider-arrow').click(function(event) {
-              event.preventDefault();
-              if ($(this).hasClass('next')) {
-                  unslider.data('unslider')['next']();
-              } else {
-                  unslider.data('unslider')['prev']();
-              };
-          });
-          var unslider = $('.slider').unslider();
-
-          unslider.on('movestart', function(e) {
-              if((e.distX > e.distY && e.distX < -e.distY) || (e.distX < e.distY &&   e.distX > -e.distY)) {
-                  e.preventDefault();
-              }
-          });
-  });
-  </script>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 
