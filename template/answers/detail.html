@@ -34,7 +34,7 @@
   <form method="POST" class="post-form" id="form">{% csrf_token %}
 
       {{ form.as_p }}
-      <textarea id='id_comment'  name="comment" id="tempalte"></textarea>
+      <textarea id='id_comment'  name="text" id="tempalte"></textarea>
   <input id="id_blog" maxlength="5000" name="blog" type="text" value="{{post.title}}">
       <button type="submit"  class="save btn btn-default">Post</button>
   </form>
