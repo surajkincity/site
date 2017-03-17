@@ -34,7 +34,7 @@
   <form method="POST" class="post-form" id="form">{% csrf_token %}
 
       {{ form.as_p }}
-  <input id="id_blog" maxlength="5000" name="blog" type="text" value="{{post.id}}">
+  <input id="id_blog" maxlength="5000" name="blog" type="text" value="{{post.title}}">
       <button type="submit"  class="save btn btn-default">Post</button>
   </form>
   <br>
@@ -42,7 +42,7 @@
   <h3 style="text-align: center;">All Answers</h3>
 
     {%for x in comments%}
-  {% if x.blog == post.id %}
+  {% if x.blog == post.title %}
 
   <div class="commentblock">
 <div class="atitle">
