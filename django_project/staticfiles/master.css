@@ -167,4 +167,5 @@ padding: 1%;
 
 .commentblock {border:1px solid lightgrey; }
 .atitle {border-bottom: 1px solid lightgrey;}
+.comments p{padding-left: 2%;padding-right: 2%;}
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
