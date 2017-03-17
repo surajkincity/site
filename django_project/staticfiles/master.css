@@ -159,7 +159,7 @@ padding: 1%;
 .team h4{font-size: 1em ;   margin:2px;
     }
 		.team p{margin: 2px;}
-.call-to-action input{padding: 15px;}
+.call-to-action input{padding: 15px;color: grey;}
 .call-to-action form {width: 100%;max-width: 700px;padding: 3%;border-radius: 3px;}
 .call-to-action1 .btn {float: none;padding: 10px 15px;margin-top: -4px;border-radius: 3px;}
 	.questionsnippet{padding:2%;background-color: #f0f0f0; border: 1px solid lightgrey;border-radius: 1px;}
