@@ -171,16 +171,8 @@ padding: 1%;
 .comments p{padding-left: 2%;padding-right: 2%;}
 label{display: none;}
 
-form {}
 
-textarea#editable {}
-pre {
-  max-width: 900px;
-  white-space: pre-wrap;       /* Since CSS 2.1 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
-}
+
+
 
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
