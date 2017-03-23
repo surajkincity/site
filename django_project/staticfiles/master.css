@@ -162,7 +162,7 @@ padding: 1%;
 .call-to-action input{padding: 15px;color: grey;}
 .call-to-action form {width: 100%;max-width: 700px;padding: 3%;border-radius: 3px;}
 .call-to-action1 .btn {float: none;padding: 10px 15px;margin-top: -4px;border-radius: 3px;}
-	.questionsnippet{padding:2%;background-color: white; border: 1px solid lightgrey;border-radius: 1px;}
+	.questionsnippet{padding:2%;background-color: white; border: 1px solid lightgrey;border-radius: 1px;border-radius: 3px !important;}
 	.questionsnippet h2{font-size:32px;}
 
 .commentblock {border:1px solid lightgrey; }
