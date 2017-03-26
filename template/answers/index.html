@@ -13,10 +13,10 @@
 
 <div style="border:1px solid  lightgrey;">
 <div style="border-bottom:1px solid  lightgrey;">
-<h2><a href="{% url 'answers:show' slug=x.slug %}" style="color:#4d4d4d;"> {{x.title}}</a></h2>
+<h2 style="color:grey;"><a href="{% url 'answers:show' slug=x.slug %}" style="color:#4d4d4d;"> {{x.title}}</a></h2>
 </div>
-<div style="background-color: #f0f0f0;">
-<p>By <b> {{x.name}}</b> on <b>{{x.date}}</b></p>
+<div style="background-color: #f0f0f0;padding:2%;">
+By <b> {{x.name}}</b> on <b>{{x.date}}</b>
 </div>
 </div>
 
