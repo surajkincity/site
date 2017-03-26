@@ -168,7 +168,7 @@ padding: 1%;
 .commentblock {border:1px solid lightgrey; }
 .atitle {height: 45px;
     margin-top: -8px;border-bottom: 1px solid lightgrey; padding-left: 2%;padding-right: 2%;}
-.comments p{padding-left: 2%;padding-right: 2%;}
+.comments p{padding-left: 2%;padding-right: 2%;    display: inline-block;}
 label{display: none;}
 
 #id_name {border-radius: 2px;padding: 20px;background-color: white !important;}
