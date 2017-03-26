@@ -171,8 +171,8 @@ padding: 1%;
 .comments p{padding-left: 2%;padding-right: 2%;}
 label{display: none;}
 
-#id_name {border-radius: 2px;padding: 20px;}
+#id_name {border-radius: 2px;padding: 20px;background-color: white !important;}
 #id_comment {background-color: white !important;}
-input {background-color: white !important;}
+
 
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
