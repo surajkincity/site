@@ -20,7 +20,7 @@
 
 
 
-  {{post.body}}
+  {{post.body|safe}}
 
 
 </div>
@@ -35,9 +35,9 @@
 
       {{ form.as_p }}
 
-  <input id="id_blog" maxlength="5000" name="blog" type="text" value="{{post.title}}">
+  <input id="id_blog" maxlength="5000" name="blog" style='border-radius: 2px;padding: 20px;' type="text" value="{{post.title}}">
 
-      <button type="submit"  class="save btn btn-default">Post</button>
+      <button type="submit"  class="save btn btn-default">Post Answer</button>
   </form>
   <br>
 

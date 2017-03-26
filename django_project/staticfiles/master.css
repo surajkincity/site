@@ -172,7 +172,7 @@ padding: 1%;
 label{display: none;}
 
 
-
-
+#id_comment {background-color: white !important;}
+input {background-color: white !important;}
 
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
