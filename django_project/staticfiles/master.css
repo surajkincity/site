@@ -176,6 +176,7 @@ label{display: none;}
 
 #id_name {border-radius: 2px;padding: 20px;background-color: white !important;}
 #id_comment {background-color: white !important;}
-
+h2{    margin: 0px !important;
+    padding: 2%;}
 
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
