@@ -171,7 +171,7 @@ padding: 1%;
 .comments p{padding-left: 2%;padding-right: 2%;}
 label{display: none;}
 
-
+#id_name {border-radius: 2px;padding: 20px;}
 #id_comment {background-color: white !important;}
 input {background-color: white !important;}
 
