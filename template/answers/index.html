@@ -5,16 +5,28 @@
 <div class="container" style="padding: 4%;">
  <h1 style="text-align:center !important;">Questions & Answers </h1>
 <div class="row">
-
-
 <br>
 {% for x in blogs %}
-<div class='questionsnippet'>
+
+
+
+
+<div style="border:1px solid  lightgrey;">
+<div style="border-bottom:1px solid  lightgrey;">
 <h2><a href="{% url 'answers:show' slug=x.slug %}" style="color:#4d4d4d;"> {{x.title}}</a></h2>
-<a class="btn btn-success" style='margin-top:-10px;padding:7px;float:right;color:white !important;' href="{% url 'answers:show' slug=x.slug %}" role="button">Read Answers</a>
- <p style="font-size:15px;"> By <b> {{x.name}}</b> on <b>{{x.date}}</b></span>
- </p>
-</div><br>
+</div>
+<div style="background-color: #f0f0f0;">
+By <b> {{x.name}}</b> on <b>{{x.date}}</b>
+</div>
+</div>
+
+<br>
+
+
+
+
 {%endfor%}
 </div></div>
 {% endblock %}
+
+
