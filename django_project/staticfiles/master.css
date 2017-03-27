@@ -174,8 +174,8 @@ padding: 1%;
 form p {display: inline-block;}
 label{display: none;}
 
-#id_name {border-radius: 2px;padding: 20px;background-color: white !important;}
-#id_comment {background-color: white !important;}
+#id_name {border-radius: 2px;padding: 20px;background-color: white !important;color: #4d4d4d;}
+#id_comment {background-color: white !important;color: #4d4d4d;}
 h2{    margin: 0px !important;
     padding: 2%;}
 
