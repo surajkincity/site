@@ -175,7 +175,7 @@ label{display: none;}
 
 #id_name {border-radius: 3px;padding: 20px;background-color: white !important;color: #4d4d4d;border: 1px solid lightgrey;margin-top: -12px !important;}
 
-#id_comment {    height: 150px;background-color: white !important;color: #4d4d4d;border: 1px solid lightgrey;border-radius: 3px;width: 700px;}
+#id_comment {  padding: 1%;  height: 150px;background-color: white !important;color: #4d4d4d;border: 1px solid lightgrey;border-radius: 3px;width: 700px;}
 h2{    margin: 0px !important;
     padding: 2%;}
 
