@@ -167,7 +167,7 @@ padding: 1%;
 	.questionsnippet{padding:2%;background-color: white; border: 1px solid lightgrey;border-radius: 1px;border-radius: 3px !important;    box-shadow: 1px 1px 3px lightgrey;}
 	.questionsnippet h2{font-size:32px;}
 
-.commentblock {border:1px solid lightgrey; }
+
 .atitle {border-bottom: 1px solid lightgrey; padding: 1%;background-color: #f0f0f0;}
 .comments p{padding-left: 2%;padding-right: 2%;    }
 form p {display: inline-block;}
