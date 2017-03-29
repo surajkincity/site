@@ -53,8 +53,9 @@
 <div style="margin-right:5px;background-color: khaki;border-radius: 50%;width: 100px;height: 100px;display: inline-block;color: white;font-size: 55px;text-align: center;">{{x.ic}}</div> <span style='font-size:14px;'> <br>By <b> {{x.name}}</b></span>
 </div>
 <div class="commentsection" style="display: inline-block;width: 80%;    border: 1px solid lightgrey;">
-<span style='font-size:14px;'>On <b>{{x.date}}</b></span>
+
 <p>{{x.comment|safe}}</p>
+<p style='font-size:14px;'>On <b>{{x.date}}</b></p>
 <p style="text-align: right;padding-top: 15px;">
 <img src="{% static 'img/like2.png' %}" style="width: 30px;margin-right: 15px;">
 <img src="{% static 'img/like2.png' %}" style="width: 30px;transform: rotate(180deg); ">
