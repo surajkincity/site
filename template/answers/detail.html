@@ -31,9 +31,10 @@
 
 
 
-  <section class="call-to-action cta-2">
-      <div class="cta-container cf">
-  <form method="POST" class="post-form" id="form" style="text-align: center;">{% csrf_token %}
+  <section class="call-to-action ">
+      <div class=" cf" style="max-width: 750px;
+    margin: auto;">
+  <form method="POST" class="post-form" id="form" style="text-align: center;padding: 1%;">{% csrf_token %}
 
       {{ form.as_p }}
 
