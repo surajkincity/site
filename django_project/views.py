@@ -4,8 +4,8 @@ from .forms import contactform,newsletterform,leadsform
 
 
 def home(request):
-	form = leadsform()
-    return render(request, 'index.html', )
+    form = leadsform()
+    return render(request, 'index.html', {'form': form})
 
 def about(request):
     return render(request, 'about.html', )
