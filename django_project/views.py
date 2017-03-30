@@ -9,9 +9,13 @@ def home(request):
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
-            form = 'Thanks! We will get back to you shortly.'
+            message = 'Thanks! We will get back to you shortly.'
+            form = ' '
+            display = 'none'
             return render(request, 'index.html', {'form': form})
     else:
+    	message = ''
+    	display = ''
         form = leadsform()
         return render(request, 'index.html', {'form': form})
 
