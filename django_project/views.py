@@ -12,12 +12,12 @@ def home(request):
             message = 'Thanks! We will get back to you shortly.'
             form = ' '
             display = 'none'
-            return render(request, 'index.html', {'form': form})
+            return render(request, 'index.html', {'form': form, 'display' :display , 'message' :message})
     else:
     	message = ''
-    	display = ''
+    	display = 'block'
         form = leadsform()
-        return render(request, 'index.html', {'form': form})
+        return render(request, 'index.html', {'form': form, 'display' :display , 'message' :message})
 
 
 def about(request):
