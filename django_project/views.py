@@ -12,7 +12,7 @@ def about(request):
 
 def contact(request):
 	form = contactform()
-    return render(request, 'contact.html', )
+    return render(request, 'contact.html', {'form': form} )
 
 def privacy(request):
     return render(request, 'privacy.html', )
