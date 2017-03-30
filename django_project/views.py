@@ -4,8 +4,16 @@ from .forms import contactform,newsletterform,leadsform
 
 
 def home(request):
-    form = leadsform()
-    return render(request, 'index.html', {'form': form})
+    if request.method == "POST":
+        form = leadsform(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.save()
+            return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+    else:
+        form = leadsform()
+        return render(request, 'index.html', {'form': form})
+
 
 def about(request):
     return render(request, 'about.html', )
