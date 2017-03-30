@@ -9,7 +9,8 @@ def home(request):
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
-            return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+            form = 'Thanks! We will get back to you shortly.'
+            return render(request, 'index.html', {'form': form})
     else:
         form = leadsform()
         return render(request, 'index.html', {'form': form})
