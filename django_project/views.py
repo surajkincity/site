@@ -11,8 +11,7 @@ def about(request):
     return render(request, 'about.html', )
 
 def contact(request):
-	form = contactform()
-    return render(request, 'contact.html', {'form': form} )
+    return render(request, 'contact.html',  )
 
 def privacy(request):
     return render(request, 'privacy.html', )
