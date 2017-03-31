@@ -4,8 +4,14 @@ from .forms import contactform,newsletterform,leadsform
 
 
 def home(request):
-    if request.method == "POST":
-        form = leadsform(request.POST)
+	message = ''
+    	display = 'block'
+        form = leadsform()
+        return render(request, 'index.html', {'form': form, 'display' :display , 'message' :message})
+    	
+
+def leadsform(request):
+	form = leadsform(request.POST)
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
@@ -13,11 +19,6 @@ def home(request):
             form = ' '
             display = 'none'
             return render(request, 'index.html', {'form': form, 'display' :display , 'message' :message})
-    else:
-    	message = ''
-    	display = 'block'
-        form = leadsform()
-        return render(request, 'index.html', {'form': form, 'display' :display , 'message' :message})
 
 
 def about(request):
