@@ -22,7 +22,7 @@ def home(request):
 
 def newsletter(request):
 	if request.method == "POST":
-    	form = newsletterform(request.POST)
+		form = newsletterform(request.POST)
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
@@ -30,6 +30,7 @@ def newsletter(request):
             form = ' '
             display = 'none'
             return render(request, 'newsletter.html', {'form': form, 'display' :display , 'message' :message})
+    	
         
     else:
     	message = ''
