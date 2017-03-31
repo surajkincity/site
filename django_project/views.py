@@ -32,7 +32,8 @@ def newsletter(request):
 			return render(request, 'newsletter.html', {'form': form, 'display' :display , 'message' :message})
 		else:
 			return render(request, 'newsletter.html', {'form': form, 'display' :display , 'message' :message})
-    else:
+     else:
+     	
 		message = ''
 		display = 'block'
 		form = newsletterform()
