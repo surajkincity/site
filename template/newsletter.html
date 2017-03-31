@@ -2,7 +2,19 @@
   {% csrf_token %}
 
       {{ form.as_p }}
-<input type="submit" style="display:{{display}};" value="Go">
+<input type="submit" style="display:{{display}};background: #C7C7C7;
+    padding: 9px 19px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    line-height: 1.6em;
+    font-size: 1em;
+    color: #000;
+    font-weight: 800;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;" value="Go" >
   
 
  
