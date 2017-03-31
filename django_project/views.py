@@ -16,7 +16,7 @@ def leadform(request):
             post = form.save(commit=False)
             post.save()
             message = 'Thanks! We will get back to you shortly.'
-            form = ' '
+            
             display = 'none'
             return render(request, 'index.html', {'form': form, 'display' :display , 'message' :message})
 
