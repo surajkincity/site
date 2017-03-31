@@ -36,9 +36,6 @@ def newsletter(request):
         form = newsletterform()
         return render(request, 'newsletter.html', {'form': form, 'display' :display , 'message' :message})
 
-    	
-	
-
 
 
 def about(request):
