@@ -33,7 +33,7 @@ def newsletter(request):
 		
 	else:
 		message = ''
-		display = 'block'
+		display = 'inline-block'
 		form = newsletterform()
 		return render(request, 'newsletter.html', {'form': form, 'display' :display , 'message' :message})
 
