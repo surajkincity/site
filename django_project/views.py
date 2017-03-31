@@ -4,20 +4,40 @@ from .forms import contactform,newsletterform,leadsform
 
 
 def home(request):
-	message = ''
-    	display = 'block'
-        form = leadsform()
-        return render(request, 'index.html', {'form': form, 'display' :display , 'message' :message})
-    	
-
-def leadform(request):
-	form = leadsform(request.POST)
+    if request.method == "POST":
+    	form = leadsform(request.POST)
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
-            message = ' '
+            message = 'Thanks! We will get back to you shortly.'
+            form = ' '
+            display = 'none'
+            return render(request, 'index.html', {'form': form, 'display' :display , 'message' :message})
+        
+    else:
+    	message = ''
+    	display = 'block'
+        form = leadsform()
+        return render(request, 'index.html', {'form': form, 'display' :display , 'message' :message})
 
-            return render(request, 'thanks.html', {'message' :message})
+def newsletter(request):
+	if request.method == "POST":
+    	form = newsletterform(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.save()
+            message = 'Suscribed'
+            form = ' '
+            display = 'none'
+            return render(request, 'newsletter.html', {'form': form, 'display' :display , 'message' :message})
+        
+    else:
+    	message = ''
+    	display = 'block'
+        form = newsletterform()
+        return render(request, 'newsletter.html', {'form': form, 'display' :display , 'message' :message})
+	
+
 
 
 def about(request):
