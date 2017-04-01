@@ -16,7 +16,7 @@
   </style>
 
 
-  <form method="POST" class="post-form" id="form" style="display:block;padding-bottom:10px;margin-top: -10px;">{{ message }}
+  <form method="POST" class="post-form" id="form" style="display:block;padding-bottom:10px;">{{ message }}
   {% csrf_token %}
 
       {{ form.as_p }}
