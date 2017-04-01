@@ -44,7 +44,7 @@ def about(request):
 
 def contact(request):
 	if request.method == "POST":
-		form = leadsform(request.POST)
+		form = contactform(request.POST)
 		if form.is_valid():
 			post = form.save(commit=False)
 			post.save()
@@ -56,7 +56,7 @@ def contact(request):
 	else:
 		message = ''
 		display = 'block'
-		form = leadsform()
+		form = contactform()
 		return render(request, 'contact.html', {'form': form, 'display' :display , 'message' :message})
 
 def privacy(request):
