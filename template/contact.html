@@ -23,28 +23,17 @@
 </div>
 <div class='col-md-4'>
 
- {{ message }}<form method="POST" class="post-form" id="form" style="display:{{display}};padding-bottom:10px;">
-  {% csrf_token %}
+     <div class=" cf" style="max-width: 750px;
+    margin: auto;">{{ message }}  
+  <form method="POST" class="post-form" id="form" style="text-align: center;padding: 1%;">{% csrf_token %}
 
       {{ form.as_p }}
-<input type="submit" style="background: #C7C7C7;
-    padding: 9px 19px;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    line-height: 1.6em;
-    font-size: 1em;
-    color: #000;
-    font-weight: 800;
-    outline: none;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;" value="Send!" >
-  
 
- 
-              
-                </form>
+  <input id="id_blog" maxlength="5000" name="blog" style='' type="text" value="{{post.title}}">
+
+      <button type="submit"  class="save btn btn-default" style="    float: right;">Send</button>
+  </form>
+      </div>
 
 
 
