@@ -21,14 +21,15 @@
 
 
 </div>
-<div class='col-md-4'>
+<div class='col-md-4' style="width: 700px;margin: auto;">
 
  {{ message }}<form method="POST" style="display:{{display}};">
   {% csrf_token %}
 
       {{ form.as_p }}
 <input type="submit" style="background: #C7C7C7;
-    padding: 16px 30px;
+    padding: 14px 30px;
+    margin-top: 15px;
     border-radius: 3px;
     border: none;
     cursor: pointer;
