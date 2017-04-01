@@ -1,7 +1,23 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block title %}Contact us | Spotable{% endblock %}
-
+<style type="text/css">
+	#id_email{border-radius: 3px;
+    padding: 20px;
+    background-color: white !important;
+    color: #4d4d4d;
+    border: 1px solid lightgrey;
+    margin-top: -12px !important;}
+    #id_message{
+    padding: 1%;
+    height: 150px;
+    background-color: white !important;
+    color: #4d4d4d;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    width: 700px;
+    }
+</style>
 {% block content %}
   <div id="contactpage" style="background-color:white !important;">
     <div class="container">
