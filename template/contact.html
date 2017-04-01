@@ -23,7 +23,7 @@
 </div>
 <div class='col-md-4'>
 
- <form method="POST" class="post-form" id="form" style="display:block;padding-bottom:10px;">{{ message }}
+ {{ message }}<form method="POST" class="post-form" id="form" style="display:{{display}};padding-bottom:10px;">
   {% csrf_token %}
 
       {{ form.as_p }}
