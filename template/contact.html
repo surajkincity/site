@@ -23,6 +23,20 @@
 </div>
 <div class='col-md-4'>
 
+  {{ message }}<form method="POST" class="post-form" id="form" style="display:{{ display }};color:grey;text-align: center;">
+  {% csrf_token %}
+
+      {{ form.as_p }}
+
+  
+<button type="submit"  class=" btn" style="display:{{ display }};" >Get in touch →</button>
+ 
+              
+                </form>
+
+
+
+
     <form  action="" method="POST" enctype="multipart/form-data" style="margin-top: -20 !important;">
 
 <input type="hidden" name="action1" value="Send">

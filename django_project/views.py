@@ -43,7 +43,21 @@ def about(request):
 	return render(request, 'about.html', )
 
 def contact(request):
-	return render(request, 'contact.html',  )
+	if request.method == "POST":
+		form = contactform(request.POST)
+		if form.is_valid():
+			post = form.save(commit=False)
+			post.save()
+			message = 'Thanks! We will get back to you shortly.'
+			form = ' '
+			display = 'none'
+			return render(request, 'contact.html', {'form': form, 'display' :display , 'message' :message})
+		
+	else:
+		message = ''
+		display = 'block'
+		form = contactform()
+		return render(request, 'contact.html', {'form': form, 'display' :display , 'message' :message})
 
 def privacy(request):
 	return render(request, 'privacy.html', )
