@@ -11,7 +11,7 @@ class leadsform(forms.ModelForm):
     class Meta:
         model = leads
         fields = ('website','email',)
-        help_texts = {
+        value = {
             'website': 'Website', 'email': 'Email',
         }
 
