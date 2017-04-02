@@ -34,7 +34,7 @@ def newsletter(request):
 	else:
 		message = ''
 		display = 'inline-block'
-		form = newsletterform()
+		form = newsletterform(initial={'email': 'Your Email' })
 		return render(request, 'newsletter.html', {'form': form, 'display' :display , 'message' :message})
 
 
@@ -56,7 +56,7 @@ def contact(request):
 	else:
 		message = ''
 		display = 'block'
-		form = contactform()
+		form = contactform(initial={'message': 'Your Message','email' : 'Email' })
 		return render(request, 'contact.html', {'form': form, 'display' :display , 'message' :message})
 
 def privacy(request):

@@ -31,7 +31,7 @@ def show(request,slug):
             post.save()
             return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
     else:
-        form = comentform()
+        form = comentform(initial={'comment': 'Post your answer . . . ','name' : 'Your Name' })
         return render(request, 'answers/detail.html',
                       {'date': date,
                       'post': post,
