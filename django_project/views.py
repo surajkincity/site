@@ -17,7 +17,7 @@ def home(request):
 	else:
 		message = ''
 		display = 'block'
-		form = leadsform()
+		form = leadsform(initial={'website': 'Your website','email' : 'Email' }, instance=leads)
 		return render(request, 'index.html', {'form': form, 'display' :display , 'message' :message})
 
 def newsletter(request):
