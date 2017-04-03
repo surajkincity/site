@@ -41,8 +41,19 @@
 
   <input id="id_blog" maxlength="5000" name="blog" style='' type="text" value="{{post.title}}">
 
-      <button type="submit"  class="save btn btn-default" style="    float: right;">Post Answer</button>
+      <button type="submit"  class="save btn btn-default" style="    float: right;"  href="{% url 'login' %}">Post Answer</button>
   </form>
+      </div>
+  </section>
+
+ {% else %}
+    <section class="call-to-action " style="border-top:1px solid #ddd;">
+      <div class=" cf" style="max-width: 750px;
+    margin: auto;">
+<h4> Login to post answers </h4>
+
+      <button type="submit"  class="save btn btn-default" style="float: right;">LogIn</button>
+
       </div>
   </section>
 {% endif %}
@@ -53,7 +64,7 @@
 <div class="comments">
 
 <br>
-  <h2 style="text-align: center;">All Answers</h2><br>
+  <h3 style="text-align: center;">All Answers</h3><br>
 
     {%for x in comments%}
   {% if x.blog == post.title %}
