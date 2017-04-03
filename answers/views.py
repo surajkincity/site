@@ -25,14 +25,11 @@ def show(request,slug):
     comments = comment.objects.all()
     blogs = blog.objects.all()
     if request.method == "POST":
-      if request.user.is_authenticated:
         form = comentform(request.POST)
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
             return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
-      else:
-        return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
     else:
         form = comentform(initial={'comment': 'Post your answer . . . ','name' : 'Your Name' })
         return render(request, 'answers/detail.html',
