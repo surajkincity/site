@@ -9,7 +9,7 @@ class blog(models.Model):
     date = models.DateField(default = datetime.datetime.now())
     name = models.CharField(max_length=5000)
     def slug(self):
-        slugit= self.title.replace(' ', '-').replace('?', '_').replace('@', '*')
+        slugit= self.title.replace(' ', '-').replace('?', '').replace('@', '*')
         return slugit
     def ic(self):
         icit = self.name[0]
