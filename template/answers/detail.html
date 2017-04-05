@@ -34,9 +34,23 @@
 {% if user.is_authenticated %}
 
 
-
-<p data-height="265" data-theme-id="0" data-slug-hash="xBpEj" data-default-tab="css,result" data-user="souporserious" data-embed-version="2" data-pen-title="Simplistic WYSIWYG Editor" class="codepen">See the Pen <a href="https://codepen.io/souporserious/pen/xBpEj/">Simplistic WYSIWYG Editor</a> by Travis Arnold (<a href="http://codepen.io/souporserious">@souporserious</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+  <div class="wysiwyg-editor">
+  <div class="wysiwyg-controls">
+    <a href='#' data-role='bold'>B</a>
+    <a href='#' data-role='italic'>I</a>
+    <a href='#' data-role='underline'>U</a>
+    <a href='#' data-role='justifyleft'><i class="menu-left"></i></a>
+    <a href='#' data-role='justifycenter'><i class="menu-center"></i></a>
+    <a href='#' data-role='justifyright'><i class="menu-right"></i></a>
+  </div>
+  <div class="wysiwyg-content" contenteditable>
+    <b>Let's make a statement!</b>
+    <br>
+    <i>This is an italicised sentence.</i>
+    <br>
+    <u>Very important information.</u>
+  </div>
+</div>
 
 
 
