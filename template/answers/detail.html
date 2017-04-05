@@ -34,17 +34,6 @@
 {% if user.is_authenticated %}
 
 
-
-
-
-
-
-
-
-  <section class="call-to-action " style="border-top:1px solid #ddd;">
-      <div class=" cf" style="max-width: 750px;margin: auto;">
-
-
 <section class="wrapper">
  
   <ul class="tools">
@@ -146,7 +135,11 @@
 
 
 
-      
+
+
+  <section class="call-to-action " style="border-top:1px solid #ddd;">
+      <div class=" cf" style="max-width: 750px;
+    margin: auto;">
   <form method="POST" class="post-form" id="form" style="text-align: center;padding: 1%;">{% csrf_token %}
 
       {{ form.as_p }}
