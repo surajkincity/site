@@ -34,23 +34,103 @@
 {% if user.is_authenticated %}
 
 
-  <div class="wysiwyg-editor">
-  <div class="wysiwyg-controls">
-    <a href='#' data-role='bold'>B</a>
-    <a href='#' data-role='italic'>I</a>
-    <a href='#' data-role='underline'>U</a>
-    <a href='#' data-role='justifyleft'><i class="menu-left"></i></a>
-    <a href='#' data-role='justifycenter'><i class="menu-center"></i></a>
-    <a href='#' data-role='justifyright'><i class="menu-right"></i></a>
+<section class="wrapper">
+  <h2>Simple WYSIWYG Editor</h2>
+  <ul class="tools">
+    <li>
+      <a href='#' data-role='bold'>
+        <i class="fa fa-bold" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li>
+      <a href='#' data-role='italic'>
+        <i class="fa fa-italic" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li>
+      <a href='#' data-role='insertUnorderedList'>
+        <i class="fa fa-list" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li>
+      <a href='#' data-role='insertOrderedList'>
+        <i class="fa fa-list-ol" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li>
+      <a href='#' data-role='createLink'>
+        <i class="fa fa-link" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li>
+      <a href='#' data-role='unlink'>
+        <i class="fa fa-unlink" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li>
+      <a href='#' data-role='insertHorizontalRule'>
+        <i class="fa fa-minus" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li>
+      <a href='#' data-role='insertParagraph'>
+        <i class="fa fa-paragraph" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li>
+      <a href='#' data-role='justifyLeft'>
+        <i class="fa fa-align-left" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li>
+      <a href='#' data-role='justifyCenter'>
+        <i class="fa fa-align-center" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li>
+      <a href='#' data-role='justifyRight'>
+        <i class="fa fa-align-right" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li>
+      <a href='#' data-role='subscript'>
+        <i class="fa fa-subscript" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li>
+      <a href='#' data-role='superscript'>
+        <i class="fa fa-superscript" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li>
+      <a href='#' data-role='underline'>
+        <i class="fa fa-underline" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+  <div class="modal">
+    <div class="modal__wrapper">
+      <form class="urlForm" name="urlForm">
+        <input class="url" name="urlField" placeholder="Add URL" />
+        <i class="fa fa-close closeModal" aria-hidden="true"></i>
+      </form>
+    </div>
   </div>
-  <div class="wysiwyg-content" contenteditable>
-    <b>Let's make a statement!</b>
-    <br>
-    <i>This is an italicised sentence.</i>
-    <br>
-    <u>Very important information.</u>
+  <div class="editableContent" contenteditable spellcheck="false">
+    <p>Click anywhere in the text to start typing or editing the existing text.</p>
+    <p>This note is editable using a combination of <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand"><code>execCommand</code></a> and the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/contentEditable"><code>contentEditable</code></a> tag. Making the link work without an ugly alert involved a bit of javascript and could certainly be made more robust, but here's a simple version to get things started. I can do things like <b>bold</b> and <i>italic</i> which can be executed with either a keyboard shortcut (<b>cmd/ctrl + b</b> or <i>cmd/ctrl + i</i>) or I can just click on the buttons in the toolbar up above.</p>
+    <p><!--span class="linkWrapper"><span class="hoverPop"><span class="hoverPop__wrapper"><a href="http://link.address.com">http://link.address.com</a> | <i class="fa fa-edit" aria-hidden="true"></i> | <i class="fa fa-unlink" aria-hidden="true"></i></span></span><a href="#">There are a bunch of other editor options</a></span--> There are a bunch of other options available but I'm sticking with the basics here. Some of the others that could be cool to include are:</p>
+    <ul>
+      <li>cut</li>
+      <li>paste</li>
+      <li>fontSize</li>
+      <li>heading</li>
+      <li>insertImage</li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand#Commands">... and a bunch more</a></li>
+    </ul>
+    <p>So give it a go and feel free to use what you want.</p>
   </div>
-</div>
+</section>
 
 
 
