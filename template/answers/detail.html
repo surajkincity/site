@@ -32,7 +32,7 @@
 
 
 {% if user.is_authenticated %}
-  <section class="wrapper" style="border:0px solid grey;">
+  <section class="wrapper" style="border:0px solid lightgrey;">
 
     <form method="POST" class="post-form" id="form" style="text-align: center;padding: 1%;">{% csrf_token %}
 
@@ -40,7 +40,7 @@
 
 
  
-  <ul class="tools" style="border:1px solid grey;">
+  <ul class="tools" style="border:1px solid grey;padding: 2%;border-radius: 4px;">
     <li>
       <a href='#' data-role='bold'>
         <i class="fa fa-bold" aria-hidden="true"></i>
@@ -120,7 +120,7 @@
       </form>
     </div>
   </div>
-  <div class="editableContent" contenteditable spellcheck="false" style="background-color: white;color: black;border:1px solid grey;">
+  <div class="editableContent" contenteditable spellcheck="false" style="background-color: white;color: black;border:1px solid lightgrey;padding: 2%;border-radius: 4px;">
     <p>Click anywhere in the text to start typing or editing the existing text.</p>
  
   </div>
