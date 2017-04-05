@@ -35,7 +35,8 @@
   <section class="wrapper" style="border:0px solid lightgrey;">
 
     
-
+<form method="POST" class="post-form" id="form" style="text-align: center;padding: 1%;">{% csrf_token %}
+{{ form.as_p }}
       
 
 
@@ -120,13 +121,12 @@
       </form>
     </div>
   </div>
-  <div id='id_comment' name='comment' lass="editableContent" contenteditable spellcheck="false" style="background-color: white;color: black;border:1px solid lightgrey;padding: 2%;border-radius: 4px;">
+  <div  lass="editableContent" contenteditable spellcheck="false" style="background-color: white;color: black;border:1px solid lightgrey;padding: 2%;border-radius: 4px;">
     <p>Click anywhere in the text to start typing or editing the existing text.</p>
  
   </div>
 
-<form method="POST" class="post-form" id="form" style="text-align: center;padding: 1%;">{% csrf_token %}
-{{ form.as_p }}
+
 
   <input id="id_blog" maxlength="5000" name="blog" style='' type="text" value="{{post.title}}">
 
