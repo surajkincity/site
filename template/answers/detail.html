@@ -120,17 +120,8 @@
     <p>Click anywhere in the text to start typing or editing the existing text.</p>
  
   </div>
-</section>
 
-
-
-
-
-
-  <section class="call-to-action " style="border-top:1px solid #ddd;">
-      <div class=" cf" style="max-width: 750px;
-    margin: auto;">
-  <form method="POST" class="post-form" id="form" style="text-align: center;padding: 1%;">{% csrf_token %}
+    <form method="POST" class="post-form" id="form" style="text-align: center;padding: 1%;">{% csrf_token %}
 
       {{ form.as_p }}
 
@@ -138,8 +129,16 @@
 
       <button type="submit"  class="save btn btn-default" style="    float: right;"  ">Post Answer</button>
   </form>
-      </div>
-  </section>
+</section>
+
+
+
+
+
+
+
+
+
 
  {% else %}
     <section class=" " style="border-top:1px solid #ddd;text-align: center;    background: #EDEFEE;
