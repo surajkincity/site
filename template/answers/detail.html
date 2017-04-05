@@ -32,6 +32,8 @@
 
 
 {% if user.is_authenticated %}
+    <form method="POST" class="post-form" id="form" style="text-align: center;padding: 1%;">{% csrf_token %}
+
 
 
 <section class="wrapper" >
@@ -121,7 +123,9 @@
  
   </div>
 
-    <form method="POST" class="post-form" id="form" style="text-align: center;padding: 1%;">{% csrf_token %}
+
+</section>
+
 
       {{ form.as_p }}
 
@@ -129,10 +133,6 @@
 
       <button type="submit"  class="save btn btn-default" style="    float: right;"  ">Post Answer</button>
   </form>
-</section>
-
-
-
 
 
 
