@@ -175,12 +175,12 @@ label{display: none;}
 
 #id_name,#id_email,#id_website {border-radius: 3px;padding: 16px;background-color: white !important;color: #4d4d4d;border: 1px solid lightgrey;}
 
-#id_comment,#id_message {  padding: 1%;  height: 150px;background-color: white !important;color: #4d4d4d;border: 1px solid lightgrey;border-radius: 3px;width: 700px;}
+#id_comment,#id_message {  padding: 1%;  height: 150px;background-color: white !important;color: #4d4d4d;border: 1px solid lightgrey;border-radius: 3px;width: 700px;margin-bottom: 20px;}
 h2{    margin: 0px !important;
     padding: 2%;}
 
 
-    
+
 
 
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
