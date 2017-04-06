@@ -33,101 +33,10 @@
 
 
 {% if user.is_authenticated %}
-  <section class="wrapper" style="border:0px solid lightgrey;">
-
-    
-
-      
-
-
  
-  <ul class="tools" style="border:1px solid lightgrey;padding: 2%;border-radius: 4px;">
-    <li>
-      <a href='#' data-role='bold'>
-        <i class="fa fa-bold" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href='#' data-role='italic'>
-        <i class="fa fa-italic" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href='#' data-role='insertUnorderedList'>
-        <i class="fa fa-list" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href='#' data-role='insertOrderedList'>
-        <i class="fa fa-list-ol" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href='#' data-role='createLink'>
-        <i class="fa fa-link" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href='#' data-role='unlink'>
-        <i class="fa fa-unlink" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href='#' data-role='insertHorizontalRule'>
-        <i class="fa fa-minus" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href='#' data-role='insertParagraph'>
-        <i class="fa fa-paragraph" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href='#' data-role='justifyLeft'>
-        <i class="fa fa-align-left" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href='#' data-role='justifyCenter'>
-        <i class="fa fa-align-center" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href='#' data-role='justifyRight'>
-        <i class="fa fa-align-right" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href='#' data-role='subscript'>
-        <i class="fa fa-subscript" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href='#' data-role='superscript'>
-        <i class="fa fa-superscript" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li>
-      <a href='#' data-role='underline'>
-        <i class="fa fa-underline" aria-hidden="true"></i>
-      </a>
-    </li>
-  </ul>
-  <div class="modal">
-    <div class="modal__wrapper">
-      <form class="urlForm" name="urlForm">
-        <input class="url" name="urlField" placeholder="Add URL" />
-        <i class="fa fa-close closeModal" aria-hidden="true"></i>
-      </form>
-    </div>
-  </div>
-
 
 <form method="POST" class="post-form" id="form" style="text-align: center;padding: 1%;text-align: left;">{% csrf_token %}
-  <div id='id_comment' name='comment' class="editableContent" contenteditable spellcheck="false" style="background-color: white;color: black;border:1px solid lightgrey;padding: 2%;border-radius: 4px;">
-    <p>Click anywhere in the text to start typing or editing the existing text.</p>
- 
-  </div>
+
 {{ form.as_p }}
 
   <input id="id_blog" maxlength="5000" name="blog" style='' type="text" value="{{post.title}}">
