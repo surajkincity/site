@@ -34,7 +34,7 @@
 
 {% if user.is_authenticated %}
  
-
+<section>
 <form method="POST" class="post-form" id="form" style="text-align: center;padding: 1%;text-align: left;">{% csrf_token %}
 
 {{ form.as_p }}
