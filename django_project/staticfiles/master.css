@@ -181,6 +181,7 @@ h2{    margin: 0px !important;
 
 li {padding: 1%;}
 
-textarea {width: 100% !important;}
+.mce-panel {
+    width: 700px;}
 
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
