@@ -22,7 +22,7 @@ class comment(models.Model):
     name = models.CharField(max_length=5000)
     blog = models.CharField(max_length=5000,null=True,blank=True)
     comment = models.TextField()
-    date = models.DateField(default = datetime.datetime.now())
+    date = models.DateField(default = datetime.datetime.now(),blank=True)
 
     def ic(self):
         icit = self.name[0]
