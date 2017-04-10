@@ -18,6 +18,7 @@ class blog(models.Model):
 
 
 
+
 class comment(models.Model):
     name = models.CharField(max_length=5000)
     blog = models.CharField(max_length=5000,null=True,blank=True)
