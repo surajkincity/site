@@ -2,6 +2,9 @@
 {% load staticfiles %}
 {% block title %}Questions & Answers | Spotable{% endblock %}
 {% block content %}
+<script type="text/javascript"> 
+var answers = 0; 
+</script>
 <div class="container" style="padding: 4%;">
  <h1 style="text-align:center !important;">Questions & Answers </h1>
 <div class="row">
@@ -17,7 +20,16 @@
 </div>
 <div style="background-color: #f0f0f0;padding: 1% 2%;font-size:14px;">
 By <b> {{x.name}}</b> on <b>{{x.date}}</b> 
- 
+   {% for x in comments %}
+  {% if x.blog == post.title %}
+<script type="text/javascript"> 
+var answers = answers+1; 
+</script>
+  {% endif %}
+  {% endfor %}
+   <script type="text/javascript"> 
+document.write(answers);
+</script>
 </div>
 </div>
 <br>
