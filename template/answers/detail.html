@@ -76,15 +76,19 @@
 <div class="comments">
 
 <br>
-  <h3 style="text-align: center;">All Answers</h3>
    {% for x in comments %}
   {% if x.blog == post.title %}
 <script type="text/javascript"> 
 var answers = answers+1; 
-document.write(answers);
+
 </script>
   {% endif %}
-  {% endfor %}<br>
+  {% endfor %}
+  <h3 style="text-align: center;">
+  <script type="text/javascript"> 
+document.write(answers);
+</script> Answers</h3>
+<br>
 
     {%for x in comments%}
   {% if x.blog == post.title %}
