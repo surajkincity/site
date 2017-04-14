@@ -2,9 +2,7 @@
 {% load staticfiles %}
 {% block title %}Questions & Answers | Spotable{% endblock %}
 {% block content %}
-<script type="text/javascript"> 
-var answers = 0; 
-</script>
+
 <div class="container" style="padding: 4%;">
  <h1 style="text-align:center !important;">Questions & Answers </h1>
 <div class="row">
@@ -19,6 +17,10 @@ var answers = 0;
 <h2 style="color:grey;font-size: 1.8em;"><a href="{% url 'answers:show' slug=x.slug %}" style="color: #4d4d4d;"> {{x.title}}</a></h2>
 </div>
 <div style="background-color: #f0f0f0;padding: 1% 2%;font-size:14px;">
+<script type="text/javascript"> 
+var answers = 0; 
+</script>
+
 By <b> {{x.name}}</b> on <b>{{x.date}}</b>
 <span style="float: right;"><b>
    {% for o in comments %}
