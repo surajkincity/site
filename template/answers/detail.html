@@ -86,8 +86,12 @@ var answers = answers+1;
   {% endfor %}
   <h3 style="text-align: center;">
   <script type="text/javascript"> 
-document.write(answers);
-</script> Answers</h3>
+   if (answers == 1) {
+    document.write('1 Answer');
+} else {
+    document.write(answers + ' ' +'Answers');
+}
+</script></h3>
 <br>
 
     {%for x in comments%}

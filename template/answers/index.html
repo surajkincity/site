@@ -29,7 +29,12 @@ var answers = answers+1;
   {% endif %}
   {% endfor %}
    <script type="text/javascript"> 
-document.write(answers + ' ' +'Answers');
+   if (answers == 1) {
+    document.write('1 Answer');
+} else {
+    document.write(answers + ' ' +'Answers');
+}
+
 </script>
 </b>
 </span>
