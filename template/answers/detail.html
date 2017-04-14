@@ -9,7 +9,9 @@
 #id_name {margin-top: -20px;}
 </style>
 
-
+<script type="text/javascript">
+  var answers = 0;
+</script>
 <div class="container" style="">
 
 <div class="row">
@@ -77,9 +79,10 @@
   <h3 style="text-align: center;">All Answers</h3>
    {% for x in comments %}
   {% if x.blog == post.title %}
-  {% for x in comments %}
- {{forloop.counter}}
- {% endfor %}
+<script type="text/javascript"> 
+var answers = answers+1; 
+document.write(answers);
+</script>
   {% endif %}
   {% endfor %}<br>
 
