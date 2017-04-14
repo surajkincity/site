@@ -77,7 +77,9 @@
   <h3 style="text-align: center;">All Answers</h3>
    {% for x in comments %}
   {% if x.blog == post.title %}
+  {% for x in comments %}
  {{forloop.counter}}
+ {% endfor %}
   {% endif %}
   {% endfor %}<br>
 
