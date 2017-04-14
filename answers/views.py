@@ -13,9 +13,11 @@ from .forms import blogform,comentform
 def blogindex(request):
     blogs = blog.objects.all()
     date = datetime.datetime.now().date()
+    comments = comment.objects.all()
     return render(request, 'answers/index.html',
                   {'date': date,
-                  'blogs':blogs
+                  'blogs':blogs,
+                  'comments' :comments
                   })
 
 def show(request,slug):
