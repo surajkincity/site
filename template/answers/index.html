@@ -19,17 +19,19 @@ var answers = 0;
 <h2 style="color:grey;font-size: 1.8em;"><a href="{% url 'answers:show' slug=x.slug %}" style="color: #4d4d4d;"> {{x.title}}</a></h2>
 </div>
 <div style="background-color: #f0f0f0;padding: 1% 2%;font-size:14px;">
-By <b> {{x.name}}</b> on <b>{{x.date}}</b> 
-   {% for x in comments %}
-  {% if x.blog == post.title %}
+By <b> {{x.name}}</b> on <b>{{x.date}}</b>
+<span style="float: right;">
+   {% for o in comments %}
+  {% if o.blog == post.title %}
 <script type="text/javascript"> 
 var answers = answers+1; 
 </script>
   {% endif %}
   {% endfor %}
    <script type="text/javascript"> 
-document.write(answers);
+document.write(answers + 'Answers');
 </script>
+</span>
 </div>
 </div>
 <br>
