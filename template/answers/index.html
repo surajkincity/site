@@ -16,7 +16,12 @@
 <h2 style="color:grey;font-size: 1.8em;"><a href="{% url 'answers:show' slug=x.slug %}" style="color: #4d4d4d;"> {{x.title}}</a></h2>
 </div>
 <div style="background-color: #f0f0f0;padding: 1% 2%;font-size:14px;">
-By <b> {{x.name}}</b> on <b>{{x.date}}</b>
+By <b> {{x.name}}</b> on <b>{{x.date}}</b> 
+  {% for x in comments %}
+  {% if x.blog == post.title %}
+  {{forloop.counter}}
+  {% endif %}
+  {% endfor %}
 </div>
 </div>
 <br>
