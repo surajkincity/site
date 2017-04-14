@@ -18,8 +18,9 @@
 <div style="background-color: #f0f0f0;padding: 1% 2%;font-size:14px;">
 By <b> {{x.name}}</b> on <b>{{x.date}}</b> 
   {% for x in comments %}
+ {{forloop.counter}}
   {% if x.blog == post.title %}
-  {{forloop.counter}}
+
   {% endif %}
   {% endfor %}
 </div>
