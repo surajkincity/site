@@ -20,7 +20,7 @@ var answers = 0;
 </div>
 <div style="background-color: #f0f0f0;padding: 1% 2%;font-size:14px;">
 By <b> {{x.name}}</b> on <b>{{x.date}}</b>
-<span style="float: right;">
+<span style="float: right;"><b>
    {% for o in comments %}
   {% if o.blog == x.title %}
 <script type="text/javascript"> 
@@ -29,8 +29,9 @@ var answers = answers+1;
   {% endif %}
   {% endfor %}
    <script type="text/javascript"> 
-document.write(answers + 'Answers');
+document.write(answers + ' ' +'Answers');
 </script>
+</b>
 </span>
 </div>
 </div>
